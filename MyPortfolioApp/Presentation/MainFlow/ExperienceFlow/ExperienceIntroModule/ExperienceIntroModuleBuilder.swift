@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 enum ExperienceIntroTransition: Transition {
-    
+    case showPortfolioProjects
 }
 
 final class ExperienceIntroModuleBuilder {

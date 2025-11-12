@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 enum ExperienceIntroViewModelEvent {
-    case introDidFetch
+    case introDidFetch(IntroDomainModel)
 }
 
 final class ExperienceIntroViewModel: BaseViewModel {
@@ -19,6 +19,10 @@ final class ExperienceIntroViewModel: BaseViewModel {
     // MARK: - Transition publisher
     private(set) lazy var transitionPublisher = transitionSubject.eraseToAnyPublisher()
     private let transitionSubject = PassthroughSubject<ExperienceIntroTransition, Never>()
+
+    // MARK: - Event publisher
+    private(set) lazy var eventPublisher = eventSubject.eraseToAnyPublisher()
+    private let eventSubject = PassthroughSubject<ExperienceIntroViewModelEvent, Never>()
 
     // MARK: - Init
     init(introNetworkingService: IntroNetworkService) {
@@ -52,10 +56,14 @@ private extension ExperienceIntroViewModel {
                 }
                 self?.isLoadingSubject.send(false)
                 self?.errorSubject.send(error)
-            } receiveValue: { [weak self] info in
+            } receiveValue: { [weak self] response in
                 self?.isLoadingSubject.send(false)
-                print(info.myPhotoUrl)
+                self?.dataDidFetch(response)
             }
             .store(in: &cancellables)
+    }
+
+    func dataDidFetch(_ response: IntroResponseModel) {
+        eventSubject.send(.introDidFetch(.init(from: response)))
     }
 }

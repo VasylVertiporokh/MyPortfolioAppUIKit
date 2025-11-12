@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class RoundedShadowImageView: UIView {
     // MARK: - Subviews
     private let shadowContainerView = UIView()
     private let imageView = UIImageView()
-    
+
     // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,8 +45,8 @@ final class RoundedShadowImageView: UIView {
 
 // MARK: - Internal extension
 extension RoundedShadowImageView {
-    func configure(with image: UIImage?) {
-        imageView.image = image
+    func configure(with url: URL) {
+        imageView.kf.setImage(with: url, placeholder: Assets.appLogo.image, options: [.transition(.fade(0.33))])
     }
 }
 
@@ -63,7 +64,7 @@ private extension RoundedShadowImageView {
     
     func setupUI() {
         imageView.contentMode = .scaleAspectFill
+        imageView.kf.indicatorType = .custom(indicator: CustomActivityIndicator())
         shadowContainerView.backgroundColor = .clear
     }
 }
-

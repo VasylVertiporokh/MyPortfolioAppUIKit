@@ -33,5 +33,14 @@ private extension ExperienceIntroViewController {
                 }
             }
             .store(in: &cancellables)
+
+        viewModel.eventPublisher
+            .sink { [unowned self] event in
+                switch event {
+                case .introDidFetch(let info):
+                    contentView.setViewState(.init(from: info))
+                }
+            }
+            .store(in: &cancellables)
     }
 }

@@ -74,6 +74,9 @@
 		1F9830D42EC4D83F00EB733A /* IntroNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830D32EC4D83F00EB733A /* IntroNetworkServiceImpl.swift */; };
 		1F9830D72EC4D91200EB733A /* IntroResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830D62EC4D91200EB733A /* IntroResponseModel.swift */; };
 		1F9830D92EC4D94800EB733A /* IntroEndpointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830D82EC4D94800EB733A /* IntroEndpointBuilder.swift */; };
+		1F9830DC2EC4ED7D00EB733A /* IntroDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830DB2EC4ED7D00EB733A /* IntroDomainModel.swift */; };
+		1F9830DF2EC4EF8B00EB733A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9830DE2EC4EF8B00EB733A /* Kingfisher */; };
+		1F9830E12EC4F80700EB733A /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830E02EC4F80700EB733A /* CustomActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +148,8 @@
 		1F9830D32EC4D83F00EB733A /* IntroNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroNetworkServiceImpl.swift; sourceTree = "<group>"; };
 		1F9830D62EC4D91200EB733A /* IntroResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroResponseModel.swift; sourceTree = "<group>"; };
 		1F9830D82EC4D94800EB733A /* IntroEndpointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroEndpointBuilder.swift; sourceTree = "<group>"; };
+		1F9830DB2EC4ED7D00EB733A /* IntroDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroDomainModel.swift; sourceTree = "<group>"; };
+		1F9830E02EC4F80700EB733A /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9830DF2EC4EF8B00EB733A /* Kingfisher in Frameworks */,
 				1F982EF52EC37A2900EB733A /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9830A12EC4BF9D00EB733A /* RoundedShadowImageView.swift */,
+				1F9830E02EC4F80700EB733A /* CustomActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -463,6 +470,7 @@
 		1F9830BA2EC4CEC400EB733A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F9830DA2EC4ED6700EB733A /* DomainModels */,
 				1F9830BD2EC4CEED00EB733A /* NetworkModels */,
 			);
 			path = Models;
@@ -545,6 +553,14 @@
 			path = Intro;
 			sourceTree = "<group>";
 		};
+		1F9830DA2EC4ED6700EB733A /* DomainModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830DB2EC4ED7D00EB733A /* IntroDomainModel.swift */,
+			);
+			path = DomainModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -564,6 +580,7 @@
 			name = MyPortfolioApp;
 			packageProductDependencies = (
 				1F982EF42EC37A2900EB733A /* CombineCocoa */,
+				1F9830DE2EC4EF8B00EB733A /* Kingfisher */,
 			);
 			productName = MyPortfolioApp;
 			productReference = 1F982EAD2EC3761100EB733A /* MyPortfolioApp.app */;
@@ -595,6 +612,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				1F982EF32EC37A2900EB733A /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				1F9830DD2EC4EF8B00EB733A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1F982EAE2EC3761100EB733A /* Products */;
@@ -671,6 +689,7 @@
 				1F982EE72EC378D300EB733A /* NSObject+Extension.swift in Sources */,
 				1F982EE92EC3793700EB733A /* SectionModel.swift in Sources */,
 				1F982EDE2EC3777B00EB733A /* UIStackView+Ext.swift in Sources */,
+				1F9830E12EC4F80700EB733A /* CustomActivityIndicator.swift in Sources */,
 				1F9830982EC4A31200EB733A /* ExperienceIntroView.swift in Sources */,
 				1F9830992EC4A31200EB733A /* ExperienceIntroViewController.swift in Sources */,
 				1F98309A2EC4A31200EB733A /* ExperienceIntroModuleBuilder.swift in Sources */,
@@ -692,6 +711,7 @@
 				1F98300F2EC393F800EB733A /* MainTabBarModuleBuilder.swift in Sources */,
 				1F9830102EC393F800EB733A /* MainTabBarViewController.swift in Sources */,
 				1F9830122EC393F800EB733A /* MainTabBarViewModel.swift in Sources */,
+				1F9830DC2EC4ED7D00EB733A /* IntroDomainModel.swift in Sources */,
 				1F9830142EC395B400EB733A /* ProjectsCoordinator.swift in Sources */,
 				1F982F242EC383FD00EB733A /* Plist.swift in Sources */,
 				1F982ED12EC3767100EB733A /* SceneDelegate.swift in Sources */,
@@ -947,6 +967,14 @@
 				minimumVersion = 0.4.1;
 			};
 		};
+		1F9830DD2EC4EF8B00EB733A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -954,6 +982,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1F982EF32EC37A2900EB733A /* XCRemoteSwiftPackageReference "CombineCocoa" */;
 			productName = CombineCocoa;
+		};
+		1F9830DE2EC4EF8B00EB733A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9830DD2EC4EF8B00EB733A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
