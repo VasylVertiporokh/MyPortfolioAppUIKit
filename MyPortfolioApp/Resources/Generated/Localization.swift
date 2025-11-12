@@ -23,6 +23,14 @@ internal enum Localization {
     /// OK
     internal static let ok = Localization.tr("Localizable", "genaral.ok", fallback: "OK")
   }
+  internal enum TabBar {
+    internal enum Item {
+      /// Projects
+      internal static let projects = Localization.tr("Localizable", "tabBar.item.projects", fallback: "Projects")
+      /// My stack
+      internal static let stack = Localization.tr("Localizable", "tabBar.item.stack", fallback: "My stack")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

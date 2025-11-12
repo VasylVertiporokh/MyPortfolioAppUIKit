@@ -46,7 +46,7 @@ final class MainTabBarCoordinator: Coordinator {
 private extension MainTabBarCoordinator {
     func setupProjectsCoordinator() {
         let navController = UINavigationController()
-        navController.tabBarItem = .init(title: "Projects",
+        navController.tabBarItem = .init(title: Localization.TabBar.Item.projects,
                                          image: Assets.TabBar.projectsIcon.image,
                                          selectedImage: nil)
         let coordinator = ProjectsCoordinator(navigationController: navController, container: container)
@@ -56,7 +56,7 @@ private extension MainTabBarCoordinator {
 
     func setupStackCoordinator() {
         let navController = UINavigationController()
-        navController.tabBarItem = .init(title: "My stack",
+        navController.tabBarItem = .init(title: Localization.TabBar.Item.stack,
                                          image: Assets.TabBar.stackIcon.image,
                                          selectedImage: nil)
         let coordinator = TechnologyStackCoordinator(navigationController: navController, container: container)
