@@ -45,6 +45,11 @@
 		1F982F342EC389CA00EB733A /* FakeSplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982F312EC389CA00EB733A /* FakeSplashViewModel.swift */; };
 		1F982F352EC389CA00EB733A /* FakeSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982F2F2EC389CA00EB733A /* FakeSplashView.swift */; };
 		1F982F372EC3913100EB733A /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982F362EC3913100EB733A /* MainTabBarCoordinator.swift */; };
+		1F98300F2EC393F800EB733A /* MainTabBarModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98300B2EC393F800EB733A /* MainTabBarModuleBuilder.swift */; };
+		1F9830102EC393F800EB733A /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98300D2EC393F800EB733A /* MainTabBarViewController.swift */; };
+		1F9830122EC393F800EB733A /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98300E2EC393F800EB733A /* MainTabBarViewModel.swift */; };
+		1F9830142EC395B400EB733A /* ProjectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830132EC395B400EB733A /* ProjectsCoordinator.swift */; };
+		1F9830162EC3C9F800EB733A /* TechnologyStackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830152EC3C9F800EB733A /* TechnologyStackCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +92,11 @@
 		1F982F302EC389CA00EB733A /* FakeSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashViewController.swift; sourceTree = "<group>"; };
 		1F982F312EC389CA00EB733A /* FakeSplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSplashViewModel.swift; sourceTree = "<group>"; };
 		1F982F362EC3913100EB733A /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		1F98300B2EC393F800EB733A /* MainTabBarModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarModuleBuilder.swift; sourceTree = "<group>"; };
+		1F98300D2EC393F800EB733A /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		1F98300E2EC393F800EB733A /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
+		1F9830132EC395B400EB733A /* ProjectsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCoordinator.swift; sourceTree = "<group>"; };
+		1F9830152EC3C9F800EB733A /* TechnologyStackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyStackCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +285,8 @@
 			children = (
 				1F982F2B2EC3876400EB733A /* AppCoordinator.swift */,
 				1F982F362EC3913100EB733A /* MainTabBarCoordinator.swift */,
+				1F9830132EC395B400EB733A /* ProjectsCoordinator.swift */,
+				1F9830152EC3C9F800EB733A /* TechnologyStackCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -302,8 +314,19 @@
 		1F982F392EC3915F00EB733A /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				1F98300A2EC393B600EB733A /* MainTabBar */,
 			);
 			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		1F98300A2EC393B600EB733A /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1F98300B2EC393F800EB733A /* MainTabBarModuleBuilder.swift */,
+				1F98300D2EC393F800EB733A /* MainTabBarViewController.swift */,
+				1F98300E2EC393F800EB733A /* MainTabBarViewModel.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +440,7 @@
 			files = (
 				1F982ED82EC3771D00EB733A /* Coordinator.swift in Sources */,
 				1F982EE22EC3789000EB733A /* UICollectionView+Extension.swift in Sources */,
+				1F9830162EC3C9F800EB733A /* TechnologyStackCoordinator.swift in Sources */,
 				1F982F082EC37DCF00EB733A /* Fonts.swift in Sources */,
 				1F982F092EC37DCF00EB733A /* Colors.swift in Sources */,
 				1F982F0A2EC37DCF00EB733A /* Localization.swift in Sources */,
@@ -432,6 +456,10 @@
 				1F982EF82EC37A7C00EB733A /* LoadingView.swift in Sources */,
 				1F982ED02EC3767100EB733A /* AppDelegate.swift in Sources */,
 				1F982EE02EC3779000EB733A /* UIView+Constraints.swift in Sources */,
+				1F98300F2EC393F800EB733A /* MainTabBarModuleBuilder.swift in Sources */,
+				1F9830102EC393F800EB733A /* MainTabBarViewController.swift in Sources */,
+				1F9830122EC393F800EB733A /* MainTabBarViewModel.swift in Sources */,
+				1F9830142EC395B400EB733A /* ProjectsCoordinator.swift in Sources */,
 				1F982F242EC383FD00EB733A /* Plist.swift in Sources */,
 				1F982ED12EC3767100EB733A /* SceneDelegate.swift in Sources */,
 				1F982F262EC3841700EB733A /* AppContainer.swift in Sources */,

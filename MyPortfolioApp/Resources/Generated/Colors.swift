@@ -23,6 +23,23 @@ internal typealias AssetColorTypeAlias = ColorAsset.Color
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Colors {
   internal static let accentColor = ColorAsset(name: "AccentColor")
+  internal static let avatarPlaceholderDark = ColorAsset(name: "AvatarPlaceholderDark")
+  internal static let avatarPlaceholderLight = ColorAsset(name: "AvatarPlaceholderLight")
+  internal static let neutralBackgroundLight = ColorAsset(name: "NeutralBackgroundLight")
+  internal static let neutralDivider = ColorAsset(name: "NeutralDivider")
+  internal static let neutralDividerLight = ColorAsset(name: "NeutralDividerLight")
+  internal static let neutralTextBlack = ColorAsset(name: "NeutralTextBlack")
+  internal static let neutralTextDark = ColorAsset(name: "NeutralTextDark")
+  internal static let neutralTextExtraDark = ColorAsset(name: "NeutralTextExtraDark")
+  internal static let neutralTextPrimary = ColorAsset(name: "NeutralTextPrimary")
+  internal static let neutralTextSecondary = ColorAsset(name: "NeutralTextSecondary")
+  internal static let neutralWhite = ColorAsset(name: "NeutralWhite")
+  internal static let primaryBlue = ColorAsset(name: "PrimaryBlue")
+  internal static let primaryBlueDark = ColorAsset(name: "PrimaryBlueDark")
+  internal static let surfaceCard = ColorAsset(name: "SurfaceCard")
+  internal static let surfaceHighlight = ColorAsset(name: "SurfaceHighlight")
+  internal static let surfaceLightBlue = ColorAsset(name: "SurfaceLightBlue")
+  internal static let tabBarBackground = ColorAsset(name: "TabBarBackground")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

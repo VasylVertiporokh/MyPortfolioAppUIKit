@@ -18,6 +18,7 @@ final class AppCoordinator: Coordinator {
     private(set) lazy var didFinishPublisher = didFinishSubject.eraseToAnyPublisher()
     private let didFinishSubject = PassthroughSubject<Void, Never>()
 
+    // MARK: - Private properties
     private var cancellables = Set<AnyCancellable>()
 
     // MARK: - Init
@@ -46,10 +47,25 @@ private extension AppCoordinator {
             .sink { [unowned self] transition in
                 switch transition {
                 case .showMainFlow:
-                    print("Hello")
+                    mainFlow()
                 }
             }
             .store(in: &cancellables)
         setRoot(module.viewController)
+    }
+
+    func mainFlow() {
+        let mainTabBarCoordinator = MainTabBarCoordinator(
+            navigationController: navigationController,
+            container: container
+        )
+
+        childCoordinators.append(mainTabBarCoordinator)
+        mainTabBarCoordinator.didFinishPublisher
+            .sink { [unowned self] in
+                removeChild(coordinator: mainTabBarCoordinator)
+            }
+            .store(in: &cancellables)
+        mainTabBarCoordinator.start()
     }
 }
