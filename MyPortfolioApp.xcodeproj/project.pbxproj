@@ -57,6 +57,19 @@
 		1F98309D2EC4A87900EB733A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98309C2EC4A87900EB733A /* UIView+Extension.swift */; };
 		1F98309F2EC4AD2100EB733A /* AppButtonConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98309E2EC4AD2100EB733A /* AppButtonConfigurations.swift */; };
 		1F9830A22EC4BF9D00EB733A /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830A12EC4BF9D00EB733A /* RoundedShadowImageView.swift */; };
+		1F9830AA2EC4CD1300EB733A /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830A92EC4CD1300EB733A /* NetworkLogger.swift */; };
+		1F9830AD2EC4CD6B00EB733A /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830AC2EC4CD6B00EB733A /* RequestBody.swift */; };
+		1F9830AF2EC4CD7C00EB733A /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830AE2EC4CD7C00EB733A /* HTTPMethods.swift */; };
+		1F9830B12EC4CD8C00EB733A /* EndpointBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830B02EC4CD8C00EB733A /* EndpointBuilderProtocol.swift */; };
+		1F9830B42EC4CE0B00EB733A /* NetworkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830B32EC4CE0B00EB733A /* NetworkPlugin.swift */; };
+		1F9830B72EC4CE4700EB733A /* RequestBuilderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830B62EC4CE4700EB733A /* RequestBuilderError.swift */; };
+		1F9830B92EC4CE5D00EB733A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830B82EC4CE5D00EB733A /* NetworkError.swift */; };
+		1F9830BF2EC4CF0100EB733A /* ApiErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830BE2EC4CF0100EB733A /* ApiErrorResponseModel.swift */; };
+		1F9830C42EC4D09800EB733A /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830C32EC4D09800EB733A /* NetworkProviderProtocol.swift */; };
+		1F9830C62EC4D0CB00EB733A /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830C52EC4D0CB00EB733A /* NetworkServiceProvider.swift */; };
+		1F9830C92EC4D11000EB733A /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830C82EC4D11000EB733A /* NetworkManagerProtocol.swift */; };
+		1F9830CB2EC4D11800EB733A /* NetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830CA2EC4D11800EB733A /* NetworkManagerImpl.swift */; };
+		1F9830CE2EC4D71D00EB733A /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830CD2EC4D71D00EB733A /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +124,19 @@
 		1F98309C2EC4A87900EB733A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		1F98309E2EC4AD2100EB733A /* AppButtonConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonConfigurations.swift; sourceTree = "<group>"; };
 		1F9830A12EC4BF9D00EB733A /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		1F9830A92EC4CD1300EB733A /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		1F9830AC2EC4CD6B00EB733A /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
+		1F9830AE2EC4CD7C00EB733A /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		1F9830B02EC4CD8C00EB733A /* EndpointBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointBuilderProtocol.swift; sourceTree = "<group>"; };
+		1F9830B32EC4CE0B00EB733A /* NetworkPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPlugin.swift; sourceTree = "<group>"; };
+		1F9830B62EC4CE4700EB733A /* RequestBuilderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderError.swift; sourceTree = "<group>"; };
+		1F9830B82EC4CE5D00EB733A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1F9830BE2EC4CF0100EB733A /* ApiErrorResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorResponseModel.swift; sourceTree = "<group>"; };
+		1F9830C32EC4D09800EB733A /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
+		1F9830C52EC4D0CB00EB733A /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		1F9830C82EC4D11000EB733A /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		1F9830CA2EC4D11800EB733A /* NetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerImpl.swift; sourceTree = "<group>"; };
+		1F9830CD2EC4D71D00EB733A /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +182,7 @@
 		1F982ED32EC376FB00EB733A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1F9830A72EC4CCC900EB733A /* Networking */,
 				1F982EF62EC37A6A00EB733A /* Views */,
 				1F982EEA2EC3794F00EB733A /* Base */,
 				1F982ED92EC3773B00EB733A /* Extensions */,
@@ -264,6 +291,7 @@
 		1F982F1A2EC37FA100EB733A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1F9830CC2EC4D70E00EB733A /* Configuration */,
 				1F982EC52EC3767100EB733A /* AppDelegate.swift */,
 				1F982ECA2EC3767100EB733A /* SceneDelegate.swift */,
 				1F982F252EC3841700EB733A /* AppContainer.swift */,
@@ -292,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				1F982F282EC3850800EB733A /* Coordinators */,
+				1F9830BA2EC4CEC400EB733A /* Models */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -372,6 +401,112 @@
 				1F9830A12EC4BF9D00EB733A /* RoundedShadowImageView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1F9830A72EC4CCC900EB733A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830C72EC4D10500EB733A /* NetworkManager */,
+				1F9830B22EC4CE0300EB733A /* NetworkPlugin */,
+				1F9830A82EC4CCFE00EB733A /* NetworkLogger */,
+				1F9830AB2EC4CD5E00EB733A /* EnpointBuilder */,
+				1F9830B52EC4CE2C00EB733A /* NetworkError */,
+				1F9830C22EC4CFE500EB733A /* NetworkProvider */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1F9830A82EC4CCFE00EB733A /* NetworkLogger */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830A92EC4CD1300EB733A /* NetworkLogger.swift */,
+			);
+			path = NetworkLogger;
+			sourceTree = "<group>";
+		};
+		1F9830AB2EC4CD5E00EB733A /* EnpointBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830AC2EC4CD6B00EB733A /* RequestBody.swift */,
+				1F9830AE2EC4CD7C00EB733A /* HTTPMethods.swift */,
+				1F9830B02EC4CD8C00EB733A /* EndpointBuilderProtocol.swift */,
+			);
+			path = EnpointBuilder;
+			sourceTree = "<group>";
+		};
+		1F9830B22EC4CE0300EB733A /* NetworkPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830B32EC4CE0B00EB733A /* NetworkPlugin.swift */,
+			);
+			path = NetworkPlugin;
+			sourceTree = "<group>";
+		};
+		1F9830B52EC4CE2C00EB733A /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830B62EC4CE4700EB733A /* RequestBuilderError.swift */,
+				1F9830B82EC4CE5D00EB733A /* NetworkError.swift */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
+		1F9830BA2EC4CEC400EB733A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830BD2EC4CEED00EB733A /* NetworkModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F9830BD2EC4CEED00EB733A /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830C02EC4CF1100EB733A /* Response */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
+		1F9830C02EC4CF1100EB733A /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830C12EC4CF1600EB733A /* General */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		1F9830C12EC4CF1600EB733A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830BE2EC4CF0100EB733A /* ApiErrorResponseModel.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		1F9830C22EC4CFE500EB733A /* NetworkProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830C32EC4D09800EB733A /* NetworkProviderProtocol.swift */,
+				1F9830C52EC4D0CB00EB733A /* NetworkServiceProvider.swift */,
+			);
+			path = NetworkProvider;
+			sourceTree = "<group>";
+		};
+		1F9830C72EC4D10500EB733A /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830C82EC4D11000EB733A /* NetworkManagerProtocol.swift */,
+				1F9830CA2EC4D11800EB733A /* NetworkManagerImpl.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		1F9830CC2EC4D70E00EB733A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830CD2EC4D71D00EB733A /* AppConfiguration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,9 +618,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9830CB2EC4D11800EB733A /* NetworkManagerImpl.swift in Sources */,
+				1F9830B12EC4CD8C00EB733A /* EndpointBuilderProtocol.swift in Sources */,
 				1F982ED82EC3771D00EB733A /* Coordinator.swift in Sources */,
+				1F9830CE2EC4D71D00EB733A /* AppConfiguration.swift in Sources */,
 				1F982EE22EC3789000EB733A /* UICollectionView+Extension.swift in Sources */,
 				1F9830A22EC4BF9D00EB733A /* RoundedShadowImageView.swift in Sources */,
+				1F9830AD2EC4CD6B00EB733A /* RequestBody.swift in Sources */,
 				1F9830162EC3C9F800EB733A /* TechnologyStackCoordinator.swift in Sources */,
 				1F982F082EC37DCF00EB733A /* Fonts.swift in Sources */,
 				1F982F092EC37DCF00EB733A /* Colors.swift in Sources */,
@@ -501,11 +640,17 @@
 				1F98309B2EC4A31200EB733A /* ExperienceIntroViewModel.swift in Sources */,
 				1F982EEE2EC379A400EB733A /* BaseViewController.swift in Sources */,
 				1F982F372EC3913100EB733A /* MainTabBarCoordinator.swift in Sources */,
+				1F9830AA2EC4CD1300EB733A /* NetworkLogger.swift in Sources */,
 				1F982EE42EC378AC00EB733A /* UITableView+Extansion.swift in Sources */,
+				1F9830B42EC4CE0B00EB733A /* NetworkPlugin.swift in Sources */,
 				1F982EF02EC379E000EB733A /* BaseViewModel.swift in Sources */,
+				1F9830B92EC4CE5D00EB733A /* NetworkError.swift in Sources */,
 				1F982EF82EC37A7C00EB733A /* LoadingView.swift in Sources */,
 				1F982ED02EC3767100EB733A /* AppDelegate.swift in Sources */,
+				1F9830B72EC4CE4700EB733A /* RequestBuilderError.swift in Sources */,
 				1F98309F2EC4AD2100EB733A /* AppButtonConfigurations.swift in Sources */,
+				1F9830C62EC4D0CB00EB733A /* NetworkServiceProvider.swift in Sources */,
+				1F9830C42EC4D09800EB733A /* NetworkProviderProtocol.swift in Sources */,
 				1F982EE02EC3779000EB733A /* UIView+Constraints.swift in Sources */,
 				1F98300F2EC393F800EB733A /* MainTabBarModuleBuilder.swift in Sources */,
 				1F9830102EC393F800EB733A /* MainTabBarViewController.swift in Sources */,
@@ -514,10 +659,13 @@
 				1F982F242EC383FD00EB733A /* Plist.swift in Sources */,
 				1F982ED12EC3767100EB733A /* SceneDelegate.swift in Sources */,
 				1F982F262EC3841700EB733A /* AppContainer.swift in Sources */,
+				1F9830AF2EC4CD7C00EB733A /* HTTPMethods.swift in Sources */,
 				1F982F322EC389CA00EB733A /* FakeSplashModuleBuilder.swift in Sources */,
 				1F98309D2EC4A87900EB733A /* UIView+Extension.swift in Sources */,
 				1F982F332EC389CA00EB733A /* FakeSplashViewController.swift in Sources */,
 				1F982F342EC389CA00EB733A /* FakeSplashViewModel.swift in Sources */,
+				1F9830C92EC4D11000EB733A /* NetworkManagerProtocol.swift in Sources */,
+				1F9830BF2EC4CF0100EB733A /* ApiErrorResponseModel.swift in Sources */,
 				1F982F352EC389CA00EB733A /* FakeSplashView.swift in Sources */,
 				1F982EF22EC37A0000EB733A /* Module.swift in Sources */,
 				1F982EEC2EC3795900EB733A /* BaseView.swift in Sources */,
