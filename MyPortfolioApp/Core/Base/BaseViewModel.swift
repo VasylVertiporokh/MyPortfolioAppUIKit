@@ -22,7 +22,7 @@ class BaseViewModel: ViewModel {
     var cancellables = Set<AnyCancellable>()
 
     private(set) lazy var isLoadingPublisher = isLoadingSubject.eraseToAnyPublisher()
-    let isLoadingSubject = PassthroughSubject<Bool, Never>()
+    let isLoadingSubject = CurrentValueSubject<Bool, Never>(false)
 
     private(set) lazy var errorPublisher = errorSubject.eraseToAnyPublisher()
     let errorSubject = PassthroughSubject<Error, Never>()

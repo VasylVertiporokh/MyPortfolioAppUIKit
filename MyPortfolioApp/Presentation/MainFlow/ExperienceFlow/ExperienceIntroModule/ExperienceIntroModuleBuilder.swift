@@ -14,7 +14,7 @@ enum ExperienceIntroTransition: Transition {
 
 final class ExperienceIntroModuleBuilder {
     class func build(container: AppContainer) -> Module<ExperienceIntroTransition, UIViewController> {
-        let viewModel = ExperienceIntroViewModel()
+        let viewModel = ExperienceIntroViewModel(introNetworkingService: container.introNetworkService)
         let viewController = ExperienceIntroViewController(viewModel: viewModel)
         return Module(viewController: viewController, transitionPublisher: viewModel.transitionPublisher)
     }

@@ -8,9 +8,31 @@
 import Foundation
 
 protocol AppContainer: AnyObject {
-
+    var appConfiguration: AppConfiguration { get }
+    var networkManager: NetworkManagerProtocol { get }
+    var introNetworkService: IntroNetworkService { get }
 }
 
 final class AppContainerImpl: AppContainer {
+    let appConfiguration: AppConfiguration
+    let networkManager: NetworkManagerProtocol
+    let introNetworkService: IntroNetworkService
 
+    init() {
+        self.networkManager = NetworkManagerImpl()
+        
+        let appConfiguration = AppConfigurationImpl(
+            apiHost: Plists.baseURL,
+            appId: Plists.appId,
+            apiKey: Plists.apiKey
+        )
+        self.appConfiguration = appConfiguration
+
+        let introNetworkProvider = NetworkServiceProvider<IntroEndpointBuilder>(
+            apiInfo: appConfiguration,
+            networkManager: networkManager
+        )
+
+        self.introNetworkService = IntroNetworkServiceImpl(introNetworkProvider)
+    }
 }
