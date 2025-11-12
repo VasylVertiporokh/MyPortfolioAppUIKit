@@ -37,7 +37,9 @@ struct NetworkLogger {
         }
 
         toPrint += method + url + header + data + divider + newLine
-        debugPrint(toPrint)
+#if DEBUG
+        print(toPrint)
+#endif
     }
 
     static func log(_ output: URLSession.DataTaskPublisher.Output) {
@@ -66,7 +68,9 @@ struct NetworkLogger {
         data += output.data.prettyPrintedJSONString ?? bodyBytes
 
         toPrint += url + statusCode + header + data + newLine + divider + newLine
-        debugPrint(toPrint)
+#if DEBUG
+        print(toPrint)
+#endif
     }
 }
 

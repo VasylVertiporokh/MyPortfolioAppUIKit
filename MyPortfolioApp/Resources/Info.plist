@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>API ID</key>
-	<string>866E42BB-192D-4216-B5B7-F87B05E83436</string>
-	<key>App ID</key>
+	<key>APP_ID</key>
 	<string>CE67D144-8BCD-480A-B8F8-C0B35020EC6F</string>
+	<key>API_KEY</key>
+	<string>866E42BB-192D-4216-B5B7-F87B05E83436</string>
 	<key>BaseURL</key>
 	<string>https://api.backendless.com</string>
 	<key>UIApplicationSceneManifest</key>

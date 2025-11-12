@@ -44,9 +44,11 @@ extension ExperienceIntroView {
         titleLabel.text = viewState.titleText
         subtitleLabel.text = viewState.subtitleText
         actionButton.configuration?.attributedTitle?.characters = .init(viewState.buttonTitle)
+        animateAppear()
     }
 
     struct ViewState {
+        let imageUrl: URL
         let titleText: String
         let subtitleText: String
         let buttonTitle: String
@@ -73,21 +75,24 @@ private extension ExperienceIntroView {
 
         imageView.configure(with: Assets.appLogo.image)
 
-        titleLabel.text = "Vertyporokh Vasyl"
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 1
         titleLabel.adjustsFontSizeToFitWidth = true
         titleLabel.textColor = Colors.neutralTextDark.color
         titleLabel.font = FontFamily.Manrope.medium.font(size: 32)
 
-        subtitleLabel.text = "As an iOS developer, I created this portfolio app to showcase my skills and highlight the projects I’ve worked on."
         subtitleLabel.textAlignment = .center
         subtitleLabel.numberOfLines = 3
         subtitleLabel.adjustsFontSizeToFitWidth = true
         subtitleLabel.textColor = Colors.neutralTextPrimary.color
         subtitleLabel.font = FontFamily.Manrope.regular.font(size: 18)
 
-        actionButton.configuration = AppButtonConfigurations.roundedPrimary(title: "View my experience")
+        actionButton.configuration = AppButtonConfigurations.roundedPrimary(title: "")
+
+        // initial transform
+        imageView.transform.tx = -screenWidth
+        labelsStackView.transform.tx = screenWidth
+        actionButton.transform.tx = -screenWidth
     }
 
     func setupLayout() {
@@ -116,5 +121,20 @@ private extension ExperienceIntroView {
         labelsStackView.setup(axis: .vertical, alignment: .center, spacing: 8)
         labelsStackView.addArrangedSubview(titleLabel)
         labelsStackView.addArrangedSubview(subtitleLabel)
+    }
+
+    func animateAppear(duration: TimeInterval = 0.66,
+                   damping: CGFloat = 0.7,
+                   velocity: CGFloat = 0.6,
+                   options: UIView.AnimationOptions = [.curveEaseOut]) {
+        UIView.animate(withDuration: duration,
+                       delay: 0,
+                       usingSpringWithDamping: damping,
+                       initialSpringVelocity: velocity,
+                       options: options) { [weak self] in
+            self?.imageView.transform = .identity
+            self?.labelsStackView.transform = .identity
+            self?.actionButton.transform = .identity
+        }
     }
 }

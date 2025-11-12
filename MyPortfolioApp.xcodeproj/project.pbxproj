@@ -70,6 +70,10 @@
 		1F9830C92EC4D11000EB733A /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830C82EC4D11000EB733A /* NetworkManagerProtocol.swift */; };
 		1F9830CB2EC4D11800EB733A /* NetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830CA2EC4D11800EB733A /* NetworkManagerImpl.swift */; };
 		1F9830CE2EC4D71D00EB733A /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830CD2EC4D71D00EB733A /* AppConfiguration.swift */; };
+		1F9830D22EC4D83600EB733A /* IntroNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830D12EC4D83600EB733A /* IntroNetworkService.swift */; };
+		1F9830D42EC4D83F00EB733A /* IntroNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830D32EC4D83F00EB733A /* IntroNetworkServiceImpl.swift */; };
+		1F9830D72EC4D91200EB733A /* IntroResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830D62EC4D91200EB733A /* IntroResponseModel.swift */; };
+		1F9830D92EC4D94800EB733A /* IntroEndpointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830D82EC4D94800EB733A /* IntroEndpointBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +141,10 @@
 		1F9830C82EC4D11000EB733A /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		1F9830CA2EC4D11800EB733A /* NetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerImpl.swift; sourceTree = "<group>"; };
 		1F9830CD2EC4D71D00EB733A /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		1F9830D12EC4D83600EB733A /* IntroNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroNetworkService.swift; sourceTree = "<group>"; };
+		1F9830D32EC4D83F00EB733A /* IntroNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroNetworkServiceImpl.swift; sourceTree = "<group>"; };
+		1F9830D62EC4D91200EB733A /* IntroResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroResponseModel.swift; sourceTree = "<group>"; };
+		1F9830D82EC4D94800EB733A /* IntroEndpointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroEndpointBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +178,8 @@
 		1F982ECC2EC3767100EB733A /* MyPortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
-				1F982F272EC384FF00EB733A /* BusinessLogic */,
 				1F982F1A2EC37FA100EB733A /* Application */,
+				1F982F272EC384FF00EB733A /* BusinessLogic */,
 				1F982ED32EC376FB00EB733A /* Core */,
 				1F982F1B2EC37FE700EB733A /* Presentation */,
 				1F982EF92EC37BD100EB733A /* Resources */,
@@ -320,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				1F982F282EC3850800EB733A /* Coordinators */,
+				1F9830CF2EC4D7FA00EB733A /* Services */,
 				1F9830BA2EC4CEC400EB733A /* Models */,
 			);
 			path = BusinessLogic;
@@ -470,6 +479,7 @@
 		1F9830C02EC4CF1100EB733A /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				1F9830D52EC4D90000EB733A /* Intro */,
 				1F9830C12EC4CF1600EB733A /* General */,
 			);
 			path = Response;
@@ -507,6 +517,32 @@
 				1F9830CD2EC4D71D00EB733A /* AppConfiguration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		1F9830CF2EC4D7FA00EB733A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830D02EC4D81700EB733A /* IntroNetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1F9830D02EC4D81700EB733A /* IntroNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830D12EC4D83600EB733A /* IntroNetworkService.swift */,
+				1F9830D82EC4D94800EB733A /* IntroEndpointBuilder.swift */,
+				1F9830D32EC4D83F00EB733A /* IntroNetworkServiceImpl.swift */,
+			);
+			path = IntroNetworkService;
+			sourceTree = "<group>";
+		};
+		1F9830D52EC4D90000EB733A /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830D62EC4D91200EB733A /* IntroResponseModel.swift */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -622,6 +658,7 @@
 				1F9830B12EC4CD8C00EB733A /* EndpointBuilderProtocol.swift in Sources */,
 				1F982ED82EC3771D00EB733A /* Coordinator.swift in Sources */,
 				1F9830CE2EC4D71D00EB733A /* AppConfiguration.swift in Sources */,
+				1F9830D92EC4D94800EB733A /* IntroEndpointBuilder.swift in Sources */,
 				1F982EE22EC3789000EB733A /* UICollectionView+Extension.swift in Sources */,
 				1F9830A22EC4BF9D00EB733A /* RoundedShadowImageView.swift in Sources */,
 				1F9830AD2EC4CD6B00EB733A /* RequestBody.swift in Sources */,
@@ -659,9 +696,12 @@
 				1F982F242EC383FD00EB733A /* Plist.swift in Sources */,
 				1F982ED12EC3767100EB733A /* SceneDelegate.swift in Sources */,
 				1F982F262EC3841700EB733A /* AppContainer.swift in Sources */,
+				1F9830D72EC4D91200EB733A /* IntroResponseModel.swift in Sources */,
 				1F9830AF2EC4CD7C00EB733A /* HTTPMethods.swift in Sources */,
 				1F982F322EC389CA00EB733A /* FakeSplashModuleBuilder.swift in Sources */,
+				1F9830D22EC4D83600EB733A /* IntroNetworkService.swift in Sources */,
 				1F98309D2EC4A87900EB733A /* UIView+Extension.swift in Sources */,
+				1F9830D42EC4D83F00EB733A /* IntroNetworkServiceImpl.swift in Sources */,
 				1F982F332EC389CA00EB733A /* FakeSplashViewController.swift in Sources */,
 				1F982F342EC389CA00EB733A /* FakeSplashViewModel.swift in Sources */,
 				1F9830C92EC4D11000EB733A /* NetworkManagerProtocol.swift in Sources */,

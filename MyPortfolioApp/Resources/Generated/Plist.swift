@@ -11,8 +11,8 @@ import Foundation
 // swiftlint:disable identifier_name line_length type_body_length
 public enum Plists {
   private static let _document = PlistDocument(path: "Info.plist")
-  public static let apiId: String = _document["API ID"]
-  public static let appID: String = _document["App ID"]
+  public static let apiKey: String = _document["API_KEY"]
+  public static let appId: String = _document["APP_ID"]
   public static let baseURL: String = _document["BaseURL"]
   public static let uiApplicationSceneManifest: [String: Any] = _document["UIApplicationSceneManifest"]
 }
