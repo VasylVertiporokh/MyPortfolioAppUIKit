@@ -32,7 +32,8 @@ final class ProjectsCoordinator: Coordinator {
         module.transitionPublisher
             .sink { transition in
                 switch transition {
-
+                case .showPortfolioProjects:
+                    print("-")
                 }
             }
             .store(in: &cancellables)

@@ -44,6 +44,7 @@ extension ExperienceIntroView {
         titleLabel.text = viewState.titleText
         subtitleLabel.text = viewState.subtitleText
         actionButton.configuration?.attributedTitle?.characters = .init(viewState.buttonTitle)
+        imageView.configure(with: viewState.imageUrl)
         animateAppear()
     }
 
@@ -52,6 +53,13 @@ extension ExperienceIntroView {
         let titleText: String
         let subtitleText: String
         let buttonTitle: String
+
+        init(from domainModel: IntroDomainModel) {
+            self.imageUrl = domainModel.myPhotoUrl
+            self.titleText = domainModel.myName
+            self.subtitleText = domainModel.shortInfo
+            self.buttonTitle = domainModel.actionButtonTitle
+        }
     }
 }
 
@@ -72,8 +80,6 @@ private extension ExperienceIntroView {
 
     func setupUI() {
         backgroundColor = Colors.neutralBackgroundLight.color
-
-        imageView.configure(with: Assets.appLogo.image)
 
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 1
