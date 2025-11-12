@@ -10,3 +10,6 @@
 "genaral.ok" = "OK";
 "genaral.done" = "Done";
 "genaral.cancel" = "Cancel";
+
+"tabBar.item.projects" = "Projects";
+"tabBar.item.stack" = "My stack";

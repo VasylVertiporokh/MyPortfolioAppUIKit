@@ -28,9 +28,15 @@ final class ProjectsCoordinator: Coordinator {
     }
 
     func start() {
-        let con = UIViewController()
-        con.view.backgroundColor = Colors.neutralTextBlack.color
-        setRoot([con])
+        let module = ExperienceIntroModuleBuilder.build(container: container)
+        module.transitionPublisher
+            .sink { transition in
+                switch transition {
+
+                }
+            }
+            .store(in: &cancellables)
+        setRoot(module.viewController)
     }
 
     // MARK: - Deinit
