@@ -23,6 +23,12 @@ internal enum Localization {
     /// OK
     internal static let ok = Localization.tr("Localizable", "genaral.ok", fallback: "OK")
   }
+  internal enum Projects {
+    internal enum ProjectsList {
+      /// Projects
+      internal static let navigationTitle = Localization.tr("Localizable", "projects.projectsList.navigationTitle", fallback: "Projects")
+    }
+  }
   internal enum TabBar {
     internal enum Item {
       /// Projects

@@ -13,3 +13,4 @@
 
 "tabBar.item.projects" = "Projects";
 "tabBar.item.stack" = "My stack";
+"projects.projectsList.navigationTitle" = "Projects";

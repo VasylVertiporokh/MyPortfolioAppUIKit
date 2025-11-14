@@ -30,10 +30,10 @@ final class ProjectsCoordinator: Coordinator {
     func start() {
         let module = ExperienceIntroModuleBuilder.build(container: container)
         module.transitionPublisher
-            .sink { transition in
+            .sink { [weak self] transition in
                 switch transition {
                 case .showPortfolioProjects:
-                    print("-")
+                    self?.showProjectsList()
                 }
             }
             .store(in: &cancellables)
@@ -43,5 +43,21 @@ final class ProjectsCoordinator: Coordinator {
     // MARK: - Deinit
     deinit {
         print("Deinit of \(String(describing: self))")
+    }
+}
+
+// MARK: - Private extenison
+private extension ProjectsCoordinator {
+    func showProjectsList() {
+        let module = ProjectsModuleBuilder.build(container: container)
+        module.transitionPublisher
+            .sink { [weak self] transition in
+                switch transition {
+                case .showProjectDetails(let details):
+                    print(details)
+                }
+            }
+            .store(in: &cancellables)
+        push(module.viewController)
     }
 }

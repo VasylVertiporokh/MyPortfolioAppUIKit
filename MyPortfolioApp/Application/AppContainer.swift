@@ -11,12 +11,14 @@ protocol AppContainer: AnyObject {
     var appConfiguration: AppConfiguration { get }
     var networkManager: NetworkManagerProtocol { get }
     var introNetworkService: IntroNetworkService { get }
+    var projectsNetworkService: ProjectsNetworkService { get }
 }
 
 final class AppContainerImpl: AppContainer {
     let appConfiguration: AppConfiguration
     let networkManager: NetworkManagerProtocol
     let introNetworkService: IntroNetworkService
+    let projectsNetworkService: ProjectsNetworkService
 
     init() {
         self.networkManager = NetworkManagerImpl()
@@ -32,7 +34,11 @@ final class AppContainerImpl: AppContainer {
             apiInfo: appConfiguration,
             networkManager: networkManager
         )
-
         self.introNetworkService = IntroNetworkServiceImpl(introNetworkProvider)
+
+        let projectsNetworkProvider = NetworkServiceProvider<ProjectsEndpointBuilder>(
+            apiInfo: appConfiguration, networkManager: networkManager
+        )
+        self.projectsNetworkService = ProjectsNetworkServiceImpl(projectsNetworkProvider)
     }
 }
