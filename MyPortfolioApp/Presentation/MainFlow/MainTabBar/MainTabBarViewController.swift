@@ -39,26 +39,23 @@ final class MainTabBarViewController: UITabBarController {
             selectedIndex = ind
         })
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        navigationController?.navigationBar.isHidden = true
-    }
 }
 
 // MARK: - Setup MainTabBarViewController
 private extension MainTabBarViewController {
     func setupUI() {
-//        tabBar.isTranslucent = true
+        tabBar.isTranslucent = true
         tabBar.tintColor = Colors.primaryBlueDark.color
         tabBar.backgroundColor = Colors.tabBarBackground.color
+        tabBar.shadowImage = UIImage()
+        tabBar.backgroundImage = UIImage()
         addShape()
     }
 
     func setupBindings() { }
 
     func addShape() {
-        tabBar.layer.shadowColor = UIColor.black.cgColor//Colors.primaryBlueDark.color.cgColor
+        tabBar.layer.shadowColor = UIColor.black.cgColor
         tabBar.layer.shadowOffset = CGSize(width: 0, height: 10)
         tabBar.layer.shadowOpacity = 0.8
         tabBar.layer.shadowRadius = 10

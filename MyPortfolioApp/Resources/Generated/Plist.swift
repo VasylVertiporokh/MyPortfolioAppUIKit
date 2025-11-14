@@ -15,6 +15,7 @@ public enum Plists {
   public static let appId: String = _document["APP_ID"]
   public static let baseURL: String = _document["BaseURL"]
   public static let uiApplicationSceneManifest: [String: Any] = _document["UIApplicationSceneManifest"]
+  public static let uiUserInterfaceStyle: String = _document["UIUserInterfaceStyle"]
 }
 // swiftlint:enable identifier_name line_length type_body_length
 

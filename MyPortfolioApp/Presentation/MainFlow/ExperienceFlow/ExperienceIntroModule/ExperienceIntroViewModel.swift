@@ -40,7 +40,7 @@ final class ExperienceIntroViewModel: BaseViewModel {
 // MARK: - Internal extension
 extension ExperienceIntroViewModel {
     func showExperienceList() {
-        print("Show")
+        transitionSubject.send(.showPortfolioProjects)
     }
 }
 

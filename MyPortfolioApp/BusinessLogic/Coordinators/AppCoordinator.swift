@@ -34,6 +34,7 @@ final class AppCoordinator: Coordinator {
 
     func start() {
         window.rootViewController = navigationController
+        navigationController.setNavigationBarHidden(true, animated: false)
         window.makeKeyAndVisible()
         fakeSplash()
     }

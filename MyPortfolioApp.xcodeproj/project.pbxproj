@@ -77,6 +77,18 @@
 		1F9830DC2EC4ED7D00EB733A /* IntroDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830DB2EC4ED7D00EB733A /* IntroDomainModel.swift */; };
 		1F9830DF2EC4EF8B00EB733A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9830DE2EC4EF8B00EB733A /* Kingfisher */; };
 		1F9830E12EC4F80700EB733A /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830E02EC4F80700EB733A /* CustomActivityIndicator.swift */; };
+		1F9830E72EC4FEF900EB733A /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830E42EC4FEF900EB733A /* ProjectsView.swift */; };
+		1F9830E82EC4FEF900EB733A /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830E52EC4FEF900EB733A /* ProjectsViewController.swift */; };
+		1F9830E92EC4FEF900EB733A /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830E62EC4FEF900EB733A /* ProjectsViewModel.swift */; };
+		1F9830EA2EC4FEF900EB733A /* ProjectsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830E32EC4FEF900EB733A /* ProjectsModuleBuilder.swift */; };
+		1F9830ED2EC5CB3000EB733A /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 1F9830EC2EC5CB3000EB733A /* SkeletonView */; };
+		1F9830F12EC5CB6700EB733A /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830F02EC5CB6700EB733A /* ProjectCollectionViewCell.swift */; };
+		1F9830F42EC5E42900EB733A /* ProjectsSkeletonDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830F32EC5E42900EB733A /* ProjectsSkeletonDiffableDataSource.swift */; };
+		1F9830F72EC614D000EB733A /* ProjectsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830F62EC614D000EB733A /* ProjectsNetworkService.swift */; };
+		1F9830F92EC614DA00EB733A /* ProjectsNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830F82EC614DA00EB733A /* ProjectsNetworkServiceImpl.swift */; };
+		1F9830FB2EC614F500EB733A /* ProjectsEndpointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830FA2EC614F500EB733A /* ProjectsEndpointBuilder.swift */; };
+		1F9830FE2EC618E100EB733A /* ProjectResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830FD2EC618E100EB733A /* ProjectResponseModel.swift */; };
+		1F9831002EC619E300EB733A /* ProjectDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830FF2EC619E300EB733A /* ProjectDomainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +162,17 @@
 		1F9830D82EC4D94800EB733A /* IntroEndpointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroEndpointBuilder.swift; sourceTree = "<group>"; };
 		1F9830DB2EC4ED7D00EB733A /* IntroDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroDomainModel.swift; sourceTree = "<group>"; };
 		1F9830E02EC4F80700EB733A /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
+		1F9830E32EC4FEF900EB733A /* ProjectsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsModuleBuilder.swift; sourceTree = "<group>"; };
+		1F9830E42EC4FEF900EB733A /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		1F9830E52EC4FEF900EB733A /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		1F9830E62EC4FEF900EB733A /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		1F9830F02EC5CB6700EB733A /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F9830F32EC5E42900EB733A /* ProjectsSkeletonDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsSkeletonDiffableDataSource.swift; sourceTree = "<group>"; };
+		1F9830F62EC614D000EB733A /* ProjectsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsNetworkService.swift; sourceTree = "<group>"; };
+		1F9830F82EC614DA00EB733A /* ProjectsNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsNetworkServiceImpl.swift; sourceTree = "<group>"; };
+		1F9830FA2EC614F500EB733A /* ProjectsEndpointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsEndpointBuilder.swift; sourceTree = "<group>"; };
+		1F9830FD2EC618E100EB733A /* ProjectResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectResponseModel.swift; sourceTree = "<group>"; };
+		1F9830FF2EC619E300EB733A /* ProjectDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDomainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9830DF2EC4EF8B00EB733A /* Kingfisher in Frameworks */,
+				1F9830ED2EC5CB3000EB733A /* SkeletonView in Frameworks */,
 				1F982EF52EC37A2900EB733A /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +430,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9830922EC4A24500EB733A /* ExperienceIntroModule */,
+				1F9830E22EC4FED700EB733A /* ProjectsModule */,
 			);
 			path = ExperienceFlow;
 			sourceTree = "<group>";
@@ -489,6 +514,7 @@
 			children = (
 				1F9830D52EC4D90000EB733A /* Intro */,
 				1F9830C12EC4CF1600EB733A /* General */,
+				1F9830FC2EC618D800EB733A /* Projects */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -530,6 +556,7 @@
 		1F9830CF2EC4D7FA00EB733A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1F9830F52EC614AE00EB733A /* ProjectsNetworkService */,
 				1F9830D02EC4D81700EB733A /* IntroNetworkService */,
 			);
 			path = Services;
@@ -557,8 +584,64 @@
 			isa = PBXGroup;
 			children = (
 				1F9830DB2EC4ED7D00EB733A /* IntroDomainModel.swift */,
+				1F9830FF2EC619E300EB733A /* ProjectDomainModel.swift */,
 			);
 			path = DomainModels;
+			sourceTree = "<group>";
+		};
+		1F9830E22EC4FED700EB733A /* ProjectsModule */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830F22EC5E42100EB733A /* DataSource */,
+				1F9830EE2EC5CB5500EB733A /* Views */,
+				1F9830E32EC4FEF900EB733A /* ProjectsModuleBuilder.swift */,
+				1F9830E42EC4FEF900EB733A /* ProjectsView.swift */,
+				1F9830E52EC4FEF900EB733A /* ProjectsViewController.swift */,
+				1F9830E62EC4FEF900EB733A /* ProjectsViewModel.swift */,
+			);
+			path = ProjectsModule;
+			sourceTree = "<group>";
+		};
+		1F9830EE2EC5CB5500EB733A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830EF2EC5CB5A00EB733A /* ProjectCollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F9830EF2EC5CB5A00EB733A /* ProjectCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830F02EC5CB6700EB733A /* ProjectCollectionViewCell.swift */,
+			);
+			path = ProjectCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1F9830F22EC5E42100EB733A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830F32EC5E42900EB733A /* ProjectsSkeletonDiffableDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		1F9830F52EC614AE00EB733A /* ProjectsNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830F62EC614D000EB733A /* ProjectsNetworkService.swift */,
+				1F9830F82EC614DA00EB733A /* ProjectsNetworkServiceImpl.swift */,
+				1F9830FA2EC614F500EB733A /* ProjectsEndpointBuilder.swift */,
+			);
+			path = ProjectsNetworkService;
+			sourceTree = "<group>";
+		};
+		1F9830FC2EC618D800EB733A /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				1F9830FD2EC618E100EB733A /* ProjectResponseModel.swift */,
+			);
+			path = Projects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +664,7 @@
 			packageProductDependencies = (
 				1F982EF42EC37A2900EB733A /* CombineCocoa */,
 				1F9830DE2EC4EF8B00EB733A /* Kingfisher */,
+				1F9830EC2EC5CB3000EB733A /* SkeletonView */,
 			);
 			productName = MyPortfolioApp;
 			productReference = 1F982EAD2EC3761100EB733A /* MyPortfolioApp.app */;
@@ -613,6 +697,7 @@
 			packageReferences = (
 				1F982EF32EC37A2900EB733A /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				1F9830DD2EC4EF8B00EB733A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1F9830EB2EC5CB3000EB733A /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1F982EAE2EC3761100EB733A /* Products */;
@@ -680,9 +765,12 @@
 				1F982EE22EC3789000EB733A /* UICollectionView+Extension.swift in Sources */,
 				1F9830A22EC4BF9D00EB733A /* RoundedShadowImageView.swift in Sources */,
 				1F9830AD2EC4CD6B00EB733A /* RequestBody.swift in Sources */,
+				1F9830F42EC5E42900EB733A /* ProjectsSkeletonDiffableDataSource.swift in Sources */,
 				1F9830162EC3C9F800EB733A /* TechnologyStackCoordinator.swift in Sources */,
+				1F9830FE2EC618E100EB733A /* ProjectResponseModel.swift in Sources */,
 				1F982F082EC37DCF00EB733A /* Fonts.swift in Sources */,
 				1F982F092EC37DCF00EB733A /* Colors.swift in Sources */,
+				1F9830FB2EC614F500EB733A /* ProjectsEndpointBuilder.swift in Sources */,
 				1F982F0A2EC37DCF00EB733A /* Localization.swift in Sources */,
 				1F982F0B2EC37DCF00EB733A /* Assets.swift in Sources */,
 				1F982F2C2EC3876400EB733A /* AppCoordinator.swift in Sources */,
@@ -694,6 +782,7 @@
 				1F9830992EC4A31200EB733A /* ExperienceIntroViewController.swift in Sources */,
 				1F98309A2EC4A31200EB733A /* ExperienceIntroModuleBuilder.swift in Sources */,
 				1F98309B2EC4A31200EB733A /* ExperienceIntroViewModel.swift in Sources */,
+				1F9830F12EC5CB6700EB733A /* ProjectCollectionViewCell.swift in Sources */,
 				1F982EEE2EC379A400EB733A /* BaseViewController.swift in Sources */,
 				1F982F372EC3913100EB733A /* MainTabBarCoordinator.swift in Sources */,
 				1F9830AA2EC4CD1300EB733A /* NetworkLogger.swift in Sources */,
@@ -701,6 +790,10 @@
 				1F9830B42EC4CE0B00EB733A /* NetworkPlugin.swift in Sources */,
 				1F982EF02EC379E000EB733A /* BaseViewModel.swift in Sources */,
 				1F9830B92EC4CE5D00EB733A /* NetworkError.swift in Sources */,
+				1F9830E72EC4FEF900EB733A /* ProjectsView.swift in Sources */,
+				1F9830E82EC4FEF900EB733A /* ProjectsViewController.swift in Sources */,
+				1F9830E92EC4FEF900EB733A /* ProjectsViewModel.swift in Sources */,
+				1F9830EA2EC4FEF900EB733A /* ProjectsModuleBuilder.swift in Sources */,
 				1F982EF82EC37A7C00EB733A /* LoadingView.swift in Sources */,
 				1F982ED02EC3767100EB733A /* AppDelegate.swift in Sources */,
 				1F9830B72EC4CE4700EB733A /* RequestBuilderError.swift in Sources */,
@@ -711,9 +804,11 @@
 				1F98300F2EC393F800EB733A /* MainTabBarModuleBuilder.swift in Sources */,
 				1F9830102EC393F800EB733A /* MainTabBarViewController.swift in Sources */,
 				1F9830122EC393F800EB733A /* MainTabBarViewModel.swift in Sources */,
+				1F9830F92EC614DA00EB733A /* ProjectsNetworkServiceImpl.swift in Sources */,
 				1F9830DC2EC4ED7D00EB733A /* IntroDomainModel.swift in Sources */,
 				1F9830142EC395B400EB733A /* ProjectsCoordinator.swift in Sources */,
 				1F982F242EC383FD00EB733A /* Plist.swift in Sources */,
+				1F9831002EC619E300EB733A /* ProjectDomainModel.swift in Sources */,
 				1F982ED12EC3767100EB733A /* SceneDelegate.swift in Sources */,
 				1F982F262EC3841700EB733A /* AppContainer.swift in Sources */,
 				1F9830D72EC4D91200EB733A /* IntroResponseModel.swift in Sources */,
@@ -726,6 +821,7 @@
 				1F982F342EC389CA00EB733A /* FakeSplashViewModel.swift in Sources */,
 				1F9830C92EC4D11000EB733A /* NetworkManagerProtocol.swift in Sources */,
 				1F9830BF2EC4CF0100EB733A /* ApiErrorResponseModel.swift in Sources */,
+				1F9830F72EC614D000EB733A /* ProjectsNetworkService.swift in Sources */,
 				1F982F352EC389CA00EB733A /* FakeSplashView.swift in Sources */,
 				1F982EF22EC37A0000EB733A /* Module.swift in Sources */,
 				1F982EEC2EC3795900EB733A /* BaseView.swift in Sources */,
@@ -975,6 +1071,14 @@
 				minimumVersion = 8.6.1;
 			};
 		};
+		1F9830EB2EC5CB3000EB733A /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -987,6 +1091,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1F9830DD2EC4EF8B00EB733A /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		1F9830EC2EC5CB3000EB733A /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F9830EB2EC5CB3000EB733A /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
