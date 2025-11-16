@@ -54,5 +54,12 @@ extension Coordinator {
     func dismiss(_ viewController: UIViewController, animated: Bool = true) {
         viewController.dismiss(animated: animated)
     }
+
+    func openURL(_ url: URL?) {
+        guard let url, UIApplication.shared.canOpenURL(url) else {
+            return
+        }
+        UIApplication.shared.open(url)
+    }
 }
 

@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import Lightbox
 
 final class ProjectsCoordinator: Coordinator {
     // MARK: - Internal properties
@@ -54,10 +55,33 @@ private extension ProjectsCoordinator {
             .sink { [weak self] transition in
                 switch transition {
                 case .showProjectDetails(let details):
-                    print(details)
+                    self?.showDetails(details: details)
                 }
             }
             .store(in: &cancellables)
         push(module.viewController)
+    }
+
+    func showDetails(details: ProjectDescriptionDomainModel) {
+        let module = ProjectDetailsModuleBuilder.build(container: container, descriptionDomainModel: details)
+        module.transitionPublisher
+            .sink { [weak self] transition in
+                switch transition {
+                case .showAppInStoreBy(let url):
+                    self?.openURL(url)
+                case .showSelectedImage(let selectedIndex, let allImages):
+                    self?.showSelectedImage(selectedImageIndex: selectedIndex, images: allImages)
+                }
+            }
+            .store(in: &cancellables)
+        module.viewController.hidesBottomBarWhenPushed = true
+        push(module.viewController)
+    }
+
+    func showSelectedImage(selectedImageIndex: Int, images: [URL]) {
+        let images: [LightboxImage] = images.map { .init(imageURL: $0) }
+        let controller = LightboxController(images: images, startIndex: selectedImageIndex)
+        controller.dynamicBackground = true
+        presentModule(controller, animated: true)
     }
 }

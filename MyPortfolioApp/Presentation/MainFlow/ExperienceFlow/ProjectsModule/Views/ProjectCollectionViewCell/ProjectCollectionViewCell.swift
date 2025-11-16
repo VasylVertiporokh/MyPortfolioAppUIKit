@@ -74,7 +74,7 @@ private extension ProjectCollectionViewCell {
         containerStackView.addArrangedSubview(subtitleLabel)
 
         NSLayoutConstraint.activate([
-            imageView.heightAnchor.constraint(lessThanOrEqualTo: imageView.widthAnchor)
+            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor)
         ])
     }
 
@@ -90,18 +90,14 @@ private extension ProjectCollectionViewCell {
         titleLabel.textColor = Colors.neutralTextDark.color
         titleLabel.font = FontFamily.Manrope.bold.font(size: 20)
         titleLabel.textAlignment = .left
-        titleLabel.numberOfLines = 1
+        titleLabel.text = "-"
         titleLabel.isSkeletonable = true
-        titleLabel.skeletonTextNumberOfLines = 1
-        titleLabel.skeletonTextLineHeight = .relativeToFont
 
         subtitleLabel.textColor = Colors.neutralTextDark.color
         subtitleLabel.font = FontFamily.Manrope.regular.font(size: 12)
         subtitleLabel.textAlignment = .left
         subtitleLabel.numberOfLines = 3
         subtitleLabel.isSkeletonable = true
-        subtitleLabel.skeletonTextNumberOfLines = 3
-        subtitleLabel.skeletonTextLineHeight = .fixed(12)
     }
 
     func dropShadow() {

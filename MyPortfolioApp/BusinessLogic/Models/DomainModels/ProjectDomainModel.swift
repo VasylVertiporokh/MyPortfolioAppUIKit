@@ -17,6 +17,7 @@ struct ProjectDomainModel {
 }
 
 struct ProjectDescriptionDomainModel {
+    var appName: String = ""
     var fullDescription: FullDescription = .init()
     var platforms: ListSection = .init()
     var features: ListSection = .init()
@@ -24,6 +25,11 @@ struct ProjectDescriptionDomainModel {
     var technologies: ListSection = .init()
     var screenshots: [URL] = []
     var appStoreURL: URL? = nil
+
+    // MARK: - Computed properties
+    var infoSections: [ListSection] {
+        [platforms, features, myContribution, technologies]
+    }
 
     struct FullDescription {
         var title: String = ""

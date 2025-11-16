@@ -89,6 +89,16 @@
 		1F9830FB2EC614F500EB733A /* ProjectsEndpointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830FA2EC614F500EB733A /* ProjectsEndpointBuilder.swift */; };
 		1F9830FE2EC618E100EB733A /* ProjectResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830FD2EC618E100EB733A /* ProjectResponseModel.swift */; };
 		1F9831002EC619E300EB733A /* ProjectDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9830FF2EC619E300EB733A /* ProjectDomainModel.swift */; };
+		1F9831062EC7225F00EB733A /* ProjectDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831032EC7225F00EB733A /* ProjectDetailsView.swift */; };
+		1F9831072EC7225F00EB733A /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831042EC7225F00EB733A /* ProjectDetailsViewController.swift */; };
+		1F9831082EC7225F00EB733A /* ProjectDetailsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831022EC7225F00EB733A /* ProjectDetailsModuleBuilder.swift */; };
+		1F9831092EC7225F00EB733A /* ProjectDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831052EC7225F00EB733A /* ProjectDetailsViewModel.swift */; };
+		1F98310B2EC7256100EB733A /* AxisScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98310A2EC7256100EB733A /* AxisScrollView.swift */; };
+		1F98310E2EC7319F00EB733A /* ProjectInfoSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98310D2EC7319F00EB733A /* ProjectInfoSectionView.swift */; };
+		1F9831132EC7D0A000EB733A /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831122EC7D0A000EB733A /* ImageCarouselView.swift */; };
+		1F9831182ECA131800EB733A /* ImageCarouselDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831172ECA131800EB733A /* ImageCarouselDiffableDataSource.swift */; };
+		1F98311A2ECA684C00EB733A /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831192ECA684C00EB733A /* CarouselCollectionViewCell.swift */; };
+		1F98311E2ECA717400EB733A /* Lightbox in Frameworks */ = {isa = PBXBuildFile; productRef = 1F98311D2ECA717400EB733A /* Lightbox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +183,15 @@
 		1F9830FA2EC614F500EB733A /* ProjectsEndpointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsEndpointBuilder.swift; sourceTree = "<group>"; };
 		1F9830FD2EC618E100EB733A /* ProjectResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectResponseModel.swift; sourceTree = "<group>"; };
 		1F9830FF2EC619E300EB733A /* ProjectDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDomainModel.swift; sourceTree = "<group>"; };
+		1F9831022EC7225F00EB733A /* ProjectDetailsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsModuleBuilder.swift; sourceTree = "<group>"; };
+		1F9831032EC7225F00EB733A /* ProjectDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsView.swift; sourceTree = "<group>"; };
+		1F9831042EC7225F00EB733A /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewController.swift; sourceTree = "<group>"; };
+		1F9831052EC7225F00EB733A /* ProjectDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewModel.swift; sourceTree = "<group>"; };
+		1F98310A2EC7256100EB733A /* AxisScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisScrollView.swift; sourceTree = "<group>"; };
+		1F98310D2EC7319F00EB733A /* ProjectInfoSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInfoSectionView.swift; sourceTree = "<group>"; };
+		1F9831122EC7D0A000EB733A /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		1F9831172ECA131800EB733A /* ImageCarouselDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselDiffableDataSource.swift; sourceTree = "<group>"; };
+		1F9831192ECA684C00EB733A /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9830DF2EC4EF8B00EB733A /* Kingfisher in Frameworks */,
+				1F98311E2ECA717400EB733A /* Lightbox in Frameworks */,
 				1F9830ED2EC5CB3000EB733A /* SkeletonView in Frameworks */,
 				1F982EF52EC37A2900EB733A /* CombineCocoa in Frameworks */,
 			);
@@ -283,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				1F982EF72EC37A7C00EB733A /* LoadingView.swift */,
+				1F98310A2EC7256100EB733A /* AxisScrollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +452,7 @@
 			children = (
 				1F9830922EC4A24500EB733A /* ExperienceIntroModule */,
 				1F9830E22EC4FED700EB733A /* ProjectsModule */,
+				1F9831012EC7224200EB733A /* ProjectDetailsModule */,
 			);
 			path = ExperienceFlow;
 			sourceTree = "<group>";
@@ -644,6 +666,45 @@
 			path = Projects;
 			sourceTree = "<group>";
 		};
+		1F9831012EC7224200EB733A /* ProjectDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831162ECA12DE00EB733A /* DataSource */,
+				1F98310C2EC7319800EB733A /* Views */,
+				1F9831022EC7225F00EB733A /* ProjectDetailsModuleBuilder.swift */,
+				1F9831032EC7225F00EB733A /* ProjectDetailsView.swift */,
+				1F9831042EC7225F00EB733A /* ProjectDetailsViewController.swift */,
+				1F9831052EC7225F00EB733A /* ProjectDetailsViewModel.swift */,
+			);
+			path = ProjectDetailsModule;
+			sourceTree = "<group>";
+		};
+		1F98310C2EC7319800EB733A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F98311B2ECA686C00EB733A /* CarouselCollectionViewCell */,
+				1F98310D2EC7319F00EB733A /* ProjectInfoSectionView.swift */,
+				1F9831122EC7D0A000EB733A /* ImageCarouselView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F9831162ECA12DE00EB733A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831172ECA131800EB733A /* ImageCarouselDiffableDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		1F98311B2ECA686C00EB733A /* CarouselCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831192ECA684C00EB733A /* CarouselCollectionViewCell.swift */,
+			);
+			path = CarouselCollectionViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -665,6 +726,7 @@
 				1F982EF42EC37A2900EB733A /* CombineCocoa */,
 				1F9830DE2EC4EF8B00EB733A /* Kingfisher */,
 				1F9830EC2EC5CB3000EB733A /* SkeletonView */,
+				1F98311D2ECA717400EB733A /* Lightbox */,
 			);
 			productName = MyPortfolioApp;
 			productReference = 1F982EAD2EC3761100EB733A /* MyPortfolioApp.app */;
@@ -698,6 +760,7 @@
 				1F982EF32EC37A2900EB733A /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				1F9830DD2EC4EF8B00EB733A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				1F9830EB2EC5CB3000EB733A /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				1F98311C2ECA717400EB733A /* XCRemoteSwiftPackageReference "Lightbox" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1F982EAE2EC3761100EB733A /* Products */;
@@ -774,6 +837,7 @@
 				1F982F0A2EC37DCF00EB733A /* Localization.swift in Sources */,
 				1F982F0B2EC37DCF00EB733A /* Assets.swift in Sources */,
 				1F982F2C2EC3876400EB733A /* AppCoordinator.swift in Sources */,
+				1F9831182ECA131800EB733A /* ImageCarouselDiffableDataSource.swift in Sources */,
 				1F982EE72EC378D300EB733A /* NSObject+Extension.swift in Sources */,
 				1F982EE92EC3793700EB733A /* SectionModel.swift in Sources */,
 				1F982EDE2EC3777B00EB733A /* UIStackView+Ext.swift in Sources */,
@@ -805,22 +869,30 @@
 				1F9830102EC393F800EB733A /* MainTabBarViewController.swift in Sources */,
 				1F9830122EC393F800EB733A /* MainTabBarViewModel.swift in Sources */,
 				1F9830F92EC614DA00EB733A /* ProjectsNetworkServiceImpl.swift in Sources */,
+				1F98311A2ECA684C00EB733A /* CarouselCollectionViewCell.swift in Sources */,
 				1F9830DC2EC4ED7D00EB733A /* IntroDomainModel.swift in Sources */,
 				1F9830142EC395B400EB733A /* ProjectsCoordinator.swift in Sources */,
 				1F982F242EC383FD00EB733A /* Plist.swift in Sources */,
 				1F9831002EC619E300EB733A /* ProjectDomainModel.swift in Sources */,
+				1F98310B2EC7256100EB733A /* AxisScrollView.swift in Sources */,
 				1F982ED12EC3767100EB733A /* SceneDelegate.swift in Sources */,
 				1F982F262EC3841700EB733A /* AppContainer.swift in Sources */,
 				1F9830D72EC4D91200EB733A /* IntroResponseModel.swift in Sources */,
 				1F9830AF2EC4CD7C00EB733A /* HTTPMethods.swift in Sources */,
 				1F982F322EC389CA00EB733A /* FakeSplashModuleBuilder.swift in Sources */,
+				1F98310E2EC7319F00EB733A /* ProjectInfoSectionView.swift in Sources */,
 				1F9830D22EC4D83600EB733A /* IntroNetworkService.swift in Sources */,
 				1F98309D2EC4A87900EB733A /* UIView+Extension.swift in Sources */,
 				1F9830D42EC4D83F00EB733A /* IntroNetworkServiceImpl.swift in Sources */,
 				1F982F332EC389CA00EB733A /* FakeSplashViewController.swift in Sources */,
+				1F9831062EC7225F00EB733A /* ProjectDetailsView.swift in Sources */,
+				1F9831072EC7225F00EB733A /* ProjectDetailsViewController.swift in Sources */,
+				1F9831082EC7225F00EB733A /* ProjectDetailsModuleBuilder.swift in Sources */,
+				1F9831092EC7225F00EB733A /* ProjectDetailsViewModel.swift in Sources */,
 				1F982F342EC389CA00EB733A /* FakeSplashViewModel.swift in Sources */,
 				1F9830C92EC4D11000EB733A /* NetworkManagerProtocol.swift in Sources */,
 				1F9830BF2EC4CF0100EB733A /* ApiErrorResponseModel.swift in Sources */,
+				1F9831132EC7D0A000EB733A /* ImageCarouselView.swift in Sources */,
 				1F9830F72EC614D000EB733A /* ProjectsNetworkService.swift in Sources */,
 				1F982F352EC389CA00EB733A /* FakeSplashView.swift in Sources */,
 				1F982EF22EC37A0000EB733A /* Module.swift in Sources */,
@@ -1079,6 +1151,14 @@
 				minimumVersion = 1.31.0;
 			};
 		};
+		1F98311C2ECA717400EB733A /* XCRemoteSwiftPackageReference "Lightbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hyperoslo/Lightbox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1096,6 +1176,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1F9830EB2EC5CB3000EB733A /* XCRemoteSwiftPackageReference "SkeletonView" */;
 			productName = SkeletonView;
+		};
+		1F98311D2ECA717400EB733A /* Lightbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F98311C2ECA717400EB733A /* XCRemoteSwiftPackageReference "Lightbox" */;
+			productName = Lightbox;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

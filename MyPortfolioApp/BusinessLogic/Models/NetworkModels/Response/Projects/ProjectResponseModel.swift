@@ -30,6 +30,7 @@ extension ProjectResponseModel {
 }
 
 struct ProjectDescriptionResponseModel: Codable {
+    let appName: String
     let fullDescription: FullDescription
     let platforms: ListSection
     let features: ListSection
@@ -52,6 +53,7 @@ struct ProjectDescriptionResponseModel: Codable {
 extension ProjectDescriptionResponseModel {
     func toDomain() -> ProjectDescriptionDomainModel {
         return .init(
+            appName: appName,
             fullDescription: .init(
                 title: fullDescription.title,
                 text: fullDescription.text
