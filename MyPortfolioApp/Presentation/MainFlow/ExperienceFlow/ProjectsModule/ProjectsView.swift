@@ -17,7 +17,8 @@ enum ProjectsViewAction {
 final class ProjectsView: BaseView {
     // MARK: - Subviews
     private var collectionView: UICollectionView!
-    
+
+    // MARK: - DataSource
     private var dataSource: ProjectsSkeletonDiffableDataSource?
     private var snapshot = NSDiffableDataSourceSnapshot<ProjectsSection, ProjectRow>()
     
@@ -135,13 +136,13 @@ private extension ProjectsView {
         
         let itemSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(0.5),
-            heightDimension: .absolute(280)
+            heightDimension: .estimated(290)
         )
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1.0),
-            heightDimension: .absolute(280)
+            heightDimension: .estimated(300)
         )
         let group = NSCollectionLayoutGroup.horizontal(
             layoutSize: groupSize,

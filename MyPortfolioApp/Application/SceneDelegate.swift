@@ -7,6 +7,8 @@
 
 import UIKit
 import Combine
+import Lightbox
+import Kingfisher
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -27,6 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             container: appContainer,
             navigationController: navigationController
         )
+        self.configureLightbox()
         self.appCoordinator?.start()
     }
 
@@ -56,5 +59,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+}
+
+// MARK: - Private extenison
+private extension SceneDelegate {
+    func configureLightbox() {
+        LightboxConfig.preload = 2
+        LightboxConfig.loadImage = { imageView, url, completion in
+            DispatchQueue.main.async {
+                imageView.kf.setImage(with: url) { result in
+                    switch result {
+                    case .success(let value):
+                        completion?(value.image)
+                    case .failure:
+                        completion?(nil)
+                    }
+                }
+            }
+        }
     }
 }
