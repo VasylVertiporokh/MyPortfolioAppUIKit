@@ -28,9 +28,8 @@ final class TechnologyStackCoordinator: Coordinator {
     }
 
     func start() {
-        let con = UIViewController()
-        con.view.backgroundColor = Colors.neutralBackgroundLight.color
-        setRoot([con])
+        let module = MyStackModuleBuilder.build(container: container)
+        setRoot([module.viewController])
     }
 
     // MARK: - Deinit

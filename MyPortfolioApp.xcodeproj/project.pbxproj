@@ -99,6 +99,19 @@
 		1F9831182ECA131800EB733A /* ImageCarouselDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831172ECA131800EB733A /* ImageCarouselDiffableDataSource.swift */; };
 		1F98311A2ECA684C00EB733A /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831192ECA684C00EB733A /* CarouselCollectionViewCell.swift */; };
 		1F98311E2ECA717400EB733A /* Lightbox in Frameworks */ = {isa = PBXBuildFile; productRef = 1F98311D2ECA717400EB733A /* Lightbox */; };
+		1F9831282ECB1D7C00EB733A /* MyStackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831272ECB1D7C00EB733A /* MyStackViewModel.swift */; };
+		1F9831292ECB1D7C00EB733A /* MyStackModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831242ECB1D7C00EB733A /* MyStackModuleBuilder.swift */; };
+		1F98312A2ECB1D7C00EB733A /* MyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831252ECB1D7C00EB733A /* MyStackView.swift */; };
+		1F98312B2ECB1D7C00EB733A /* MyStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831262ECB1D7C00EB733A /* MyStackViewController.swift */; };
+		1F98312F2ECB2A9C00EB733A /* MyInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98312E2ECB2A9C00EB733A /* MyInfoCollectionViewCell.swift */; };
+		1F9831322ECBD33300EB733A /* StackInfoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831312ECBD33300EB733A /* StackInfoNetworkService.swift */; };
+		1F9831342ECBD34B00EB733A /* StackInfoEndpointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831332ECBD34B00EB733A /* StackInfoEndpointBuilder.swift */; };
+		1F9831362ECBD35A00EB733A /* StackInfoNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831352ECBD35A00EB733A /* StackInfoNetworkServiceImpl.swift */; };
+		1F9831392ECBD6DB00EB733A /* StackInfoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831382ECBD6DB00EB733A /* StackInfoResponseModel.swift */; };
+		1F98313B2ECC794700EB733A /* StackInfoDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98313A2ECC794700EB733A /* StackInfoDomainModel.swift */; };
+		1F98313D2ECC9FB100EB733A /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98313C2ECC9FB100EB733A /* NSLayoutConstraint+Extension.swift */; };
+		1F9831402ECDE06C00EB733A /* MyStackHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98313F2ECDE06C00EB733A /* MyStackHeaderView.swift */; };
+		1F9831432ECDE6D900EB733A /* MyStackDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9831422ECDE6D900EB733A /* MyStackDiffableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +205,19 @@
 		1F9831122EC7D0A000EB733A /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		1F9831172ECA131800EB733A /* ImageCarouselDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselDiffableDataSource.swift; sourceTree = "<group>"; };
 		1F9831192ECA684C00EB733A /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F9831242ECB1D7C00EB733A /* MyStackModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackModuleBuilder.swift; sourceTree = "<group>"; };
+		1F9831252ECB1D7C00EB733A /* MyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackView.swift; sourceTree = "<group>"; };
+		1F9831262ECB1D7C00EB733A /* MyStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackViewController.swift; sourceTree = "<group>"; };
+		1F9831272ECB1D7C00EB733A /* MyStackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackViewModel.swift; sourceTree = "<group>"; };
+		1F98312E2ECB2A9C00EB733A /* MyInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F9831312ECBD33300EB733A /* StackInfoNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackInfoNetworkService.swift; sourceTree = "<group>"; };
+		1F9831332ECBD34B00EB733A /* StackInfoEndpointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackInfoEndpointBuilder.swift; sourceTree = "<group>"; };
+		1F9831352ECBD35A00EB733A /* StackInfoNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackInfoNetworkServiceImpl.swift; sourceTree = "<group>"; };
+		1F9831382ECBD6DB00EB733A /* StackInfoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackInfoResponseModel.swift; sourceTree = "<group>"; };
+		1F98313A2ECC794700EB733A /* StackInfoDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackInfoDomainModel.swift; sourceTree = "<group>"; };
+		1F98313C2ECC9FB100EB733A /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
+		1F98313F2ECDE06C00EB733A /* MyStackHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackHeaderView.swift; sourceTree = "<group>"; };
+		1F9831422ECDE6D900EB733A /* MyStackDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackDiffableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +302,7 @@
 				1F982EE12EC3789000EB733A /* UICollectionView+Extension.swift */,
 				1F982EE32EC378AC00EB733A /* UITableView+Extansion.swift */,
 				1F98309C2EC4A87900EB733A /* UIView+Extension.swift */,
+				1F98313C2ECC9FB100EB733A /* NSLayoutConstraint+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -421,6 +448,7 @@
 			children = (
 				1F98300A2EC393B600EB733A /* MainTabBar */,
 				1F9830932EC4A2F900EB733A /* ExperienceFlow */,
+				1F9831222ECB1D5D00EB733A /* StackFlow */,
 			);
 			path = MainFlow;
 			sourceTree = "<group>";
@@ -537,6 +565,7 @@
 				1F9830D52EC4D90000EB733A /* Intro */,
 				1F9830C12EC4CF1600EB733A /* General */,
 				1F9830FC2EC618D800EB733A /* Projects */,
+				1F9831372ECBD6CD00EB733A /* StackInfo */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -578,8 +607,9 @@
 		1F9830CF2EC4D7FA00EB733A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1F9830F52EC614AE00EB733A /* ProjectsNetworkService */,
 				1F9830D02EC4D81700EB733A /* IntroNetworkService */,
+				1F9830F52EC614AE00EB733A /* ProjectsNetworkService */,
+				1F9831302ECBD30D00EB733A /* StackInfoNetworkService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -607,6 +637,7 @@
 			children = (
 				1F9830DB2EC4ED7D00EB733A /* IntroDomainModel.swift */,
 				1F9830FF2EC619E300EB733A /* ProjectDomainModel.swift */,
+				1F98313A2ECC794700EB733A /* StackInfoDomainModel.swift */,
 			);
 			path = DomainModels;
 			sourceTree = "<group>";
@@ -703,6 +734,78 @@
 				1F9831192ECA684C00EB733A /* CarouselCollectionViewCell.swift */,
 			);
 			path = CarouselCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1F9831222ECB1D5D00EB733A /* StackFlow */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831232ECB1D6A00EB733A /* MyStackModule */,
+			);
+			path = StackFlow;
+			sourceTree = "<group>";
+		};
+		1F9831232ECB1D6A00EB733A /* MyStackModule */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831412ECDE6BE00EB733A /* DataSource */,
+				1F98312C2ECB2A8C00EB733A /* Views */,
+				1F9831242ECB1D7C00EB733A /* MyStackModuleBuilder.swift */,
+				1F9831252ECB1D7C00EB733A /* MyStackView.swift */,
+				1F9831262ECB1D7C00EB733A /* MyStackViewController.swift */,
+				1F9831272ECB1D7C00EB733A /* MyStackViewModel.swift */,
+			);
+			path = MyStackModule;
+			sourceTree = "<group>";
+		};
+		1F98312C2ECB2A8C00EB733A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F98313E2ECDE06500EB733A /* MyStackHeaderView */,
+				1F98312D2ECB2A9200EB733A /* MyInfoCollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F98312D2ECB2A9200EB733A /* MyInfoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F98312E2ECB2A9C00EB733A /* MyInfoCollectionViewCell.swift */,
+			);
+			path = MyInfoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1F9831302ECBD30D00EB733A /* StackInfoNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831312ECBD33300EB733A /* StackInfoNetworkService.swift */,
+				1F9831352ECBD35A00EB733A /* StackInfoNetworkServiceImpl.swift */,
+				1F9831332ECBD34B00EB733A /* StackInfoEndpointBuilder.swift */,
+			);
+			path = StackInfoNetworkService;
+			sourceTree = "<group>";
+		};
+		1F9831372ECBD6CD00EB733A /* StackInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831382ECBD6DB00EB733A /* StackInfoResponseModel.swift */,
+			);
+			path = StackInfo;
+			sourceTree = "<group>";
+		};
+		1F98313E2ECDE06500EB733A /* MyStackHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				1F98313F2ECDE06C00EB733A /* MyStackHeaderView.swift */,
+			);
+			path = MyStackHeaderView;
+			sourceTree = "<group>";
+		};
+		1F9831412ECDE6BE00EB733A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1F9831422ECDE6D900EB733A /* MyStackDiffableDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -836,6 +939,7 @@
 				1F9830FB2EC614F500EB733A /* ProjectsEndpointBuilder.swift in Sources */,
 				1F982F0A2EC37DCF00EB733A /* Localization.swift in Sources */,
 				1F982F0B2EC37DCF00EB733A /* Assets.swift in Sources */,
+				1F9831402ECDE06C00EB733A /* MyStackHeaderView.swift in Sources */,
 				1F982F2C2EC3876400EB733A /* AppCoordinator.swift in Sources */,
 				1F9831182ECA131800EB733A /* ImageCarouselDiffableDataSource.swift in Sources */,
 				1F982EE72EC378D300EB733A /* NSObject+Extension.swift in Sources */,
@@ -859,18 +963,22 @@
 				1F9830E92EC4FEF900EB733A /* ProjectsViewModel.swift in Sources */,
 				1F9830EA2EC4FEF900EB733A /* ProjectsModuleBuilder.swift in Sources */,
 				1F982EF82EC37A7C00EB733A /* LoadingView.swift in Sources */,
+				1F98313B2ECC794700EB733A /* StackInfoDomainModel.swift in Sources */,
 				1F982ED02EC3767100EB733A /* AppDelegate.swift in Sources */,
 				1F9830B72EC4CE4700EB733A /* RequestBuilderError.swift in Sources */,
 				1F98309F2EC4AD2100EB733A /* AppButtonConfigurations.swift in Sources */,
 				1F9830C62EC4D0CB00EB733A /* NetworkServiceProvider.swift in Sources */,
 				1F9830C42EC4D09800EB733A /* NetworkProviderProtocol.swift in Sources */,
 				1F982EE02EC3779000EB733A /* UIView+Constraints.swift in Sources */,
+				1F9831322ECBD33300EB733A /* StackInfoNetworkService.swift in Sources */,
+				1F9831362ECBD35A00EB733A /* StackInfoNetworkServiceImpl.swift in Sources */,
 				1F98300F2EC393F800EB733A /* MainTabBarModuleBuilder.swift in Sources */,
 				1F9830102EC393F800EB733A /* MainTabBarViewController.swift in Sources */,
 				1F9830122EC393F800EB733A /* MainTabBarViewModel.swift in Sources */,
 				1F9830F92EC614DA00EB733A /* ProjectsNetworkServiceImpl.swift in Sources */,
 				1F98311A2ECA684C00EB733A /* CarouselCollectionViewCell.swift in Sources */,
 				1F9830DC2EC4ED7D00EB733A /* IntroDomainModel.swift in Sources */,
+				1F9831392ECBD6DB00EB733A /* StackInfoResponseModel.swift in Sources */,
 				1F9830142EC395B400EB733A /* ProjectsCoordinator.swift in Sources */,
 				1F982F242EC383FD00EB733A /* Plist.swift in Sources */,
 				1F9831002EC619E300EB733A /* ProjectDomainModel.swift in Sources */,
@@ -879,16 +987,24 @@
 				1F982F262EC3841700EB733A /* AppContainer.swift in Sources */,
 				1F9830D72EC4D91200EB733A /* IntroResponseModel.swift in Sources */,
 				1F9830AF2EC4CD7C00EB733A /* HTTPMethods.swift in Sources */,
+				1F9831432ECDE6D900EB733A /* MyStackDiffableDataSource.swift in Sources */,
 				1F982F322EC389CA00EB733A /* FakeSplashModuleBuilder.swift in Sources */,
 				1F98310E2EC7319F00EB733A /* ProjectInfoSectionView.swift in Sources */,
 				1F9830D22EC4D83600EB733A /* IntroNetworkService.swift in Sources */,
 				1F98309D2EC4A87900EB733A /* UIView+Extension.swift in Sources */,
+				1F9831282ECB1D7C00EB733A /* MyStackViewModel.swift in Sources */,
+				1F9831292ECB1D7C00EB733A /* MyStackModuleBuilder.swift in Sources */,
+				1F98313D2ECC9FB100EB733A /* NSLayoutConstraint+Extension.swift in Sources */,
+				1F98312A2ECB1D7C00EB733A /* MyStackView.swift in Sources */,
+				1F98312B2ECB1D7C00EB733A /* MyStackViewController.swift in Sources */,
 				1F9830D42EC4D83F00EB733A /* IntroNetworkServiceImpl.swift in Sources */,
+				1F98312F2ECB2A9C00EB733A /* MyInfoCollectionViewCell.swift in Sources */,
 				1F982F332EC389CA00EB733A /* FakeSplashViewController.swift in Sources */,
 				1F9831062EC7225F00EB733A /* ProjectDetailsView.swift in Sources */,
 				1F9831072EC7225F00EB733A /* ProjectDetailsViewController.swift in Sources */,
 				1F9831082EC7225F00EB733A /* ProjectDetailsModuleBuilder.swift in Sources */,
 				1F9831092EC7225F00EB733A /* ProjectDetailsViewModel.swift in Sources */,
+				1F9831342ECBD34B00EB733A /* StackInfoEndpointBuilder.swift in Sources */,
 				1F982F342EC389CA00EB733A /* FakeSplashViewModel.swift in Sources */,
 				1F9830C92EC4D11000EB733A /* NetworkManagerProtocol.swift in Sources */,
 				1F9830BF2EC4CF0100EB733A /* ApiErrorResponseModel.swift in Sources */,
