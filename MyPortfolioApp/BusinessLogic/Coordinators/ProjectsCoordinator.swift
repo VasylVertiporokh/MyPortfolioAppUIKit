@@ -58,6 +58,8 @@ final class ProjectsCoordinator: Coordinator {
                 switch transition {
                 case .showPortfolioProjects:
                     self?.showProjectsList()
+                case .showLinkedInProfile(let url):
+                    self?.openURL(url)
                 }
             }
             .store(in: &cancellables)

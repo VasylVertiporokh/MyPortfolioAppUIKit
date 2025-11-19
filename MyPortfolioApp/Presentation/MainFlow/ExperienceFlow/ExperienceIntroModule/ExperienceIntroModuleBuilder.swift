@@ -10,6 +10,7 @@ import Combine
 
 enum ExperienceIntroTransition: Transition {
     case showPortfolioProjects
+    case showLinkedInProfile(URL?)
 }
 
 final class ExperienceIntroModuleBuilder {

@@ -11,6 +11,7 @@ import CombineCocoa
 
 enum ExperienceIntroViewAction {
     case actionButtonDidTap
+    case linkedinButtonDidTap
 }
 
 final class ExperienceIntroView: BaseView {
@@ -22,6 +23,7 @@ final class ExperienceIntroView: BaseView {
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
     private let actionButton = UIButton()
+    private let showInLinkedinButton = UIButton()
 
     // MARK: - Publishers
     private(set) lazy var actionPublisher = actionSubject.eraseToAnyPublisher()
@@ -44,6 +46,7 @@ extension ExperienceIntroView {
         titleLabel.text = viewState.titleText
         subtitleLabel.text = viewState.subtitleText
         actionButton.configuration?.attributedTitle?.characters = .init(viewState.buttonTitle)
+        showInLinkedinButton.configuration?.attributedTitle?.characters = .init(viewState.showInLinkedinTitle)
         imageView.configure(with: viewState.imageUrl)
         animateAppear()
     }
@@ -53,12 +56,14 @@ extension ExperienceIntroView {
         let titleText: String
         let subtitleText: String
         let buttonTitle: String
+        let showInLinkedinTitle: String
 
         init(from domainModel: IntroDomainModel) {
             self.imageUrl = domainModel.myPhotoUrl
             self.titleText = domainModel.myName
             self.subtitleText = domainModel.shortInfo
             self.buttonTitle = domainModel.actionButtonTitle
+            self.showInLinkedinTitle = domainModel.linkedinButtonTitle
         }
     }
 }
@@ -74,6 +79,11 @@ private extension ExperienceIntroView {
     func bindActions() {
         actionButton.tapPublisher
             .map { ExperienceIntroViewAction.actionButtonDidTap }
+            .subscribe(actionSubject)
+            .store(in: &cancellables)
+
+        showInLinkedinButton.tapPublisher
+            .map { ExperienceIntroViewAction.linkedinButtonDidTap }
             .subscribe(actionSubject)
             .store(in: &cancellables)
     }
@@ -93,12 +103,14 @@ private extension ExperienceIntroView {
         subtitleLabel.textColor = Colors.neutralTextPrimary.color
         subtitleLabel.font = FontFamily.Manrope.regular.font(size: 18)
 
-        actionButton.configuration = AppButtonConfigurations.roundedPrimary(title: "")
+        actionButton.configuration = AppButtonConfigurations.roundedPrimary()
+        showInLinkedinButton.configuration = AppButtonConfigurations.roundedPrimary()
 
         // initial transform
         imageView.transform.tx = -screenWidth
         labelsStackView.transform.tx = screenWidth
         actionButton.transform.tx = -screenWidth
+        showInLinkedinButton.transform.tx = screenWidth
     }
 
     func setupLayout() {
@@ -112,7 +124,8 @@ private extension ExperienceIntroView {
         NSLayoutConstraint.activate([
             imageView.heightAnchor.constraint(equalToConstant: 200),
             imageView.widthAnchor.constraint(equalToConstant: 200),
-            actionButton.heightAnchor.constraint(equalToConstant: 48)
+            actionButton.heightAnchor.constraint(equalToConstant: 48),
+            showInLinkedinButton.heightAnchor.constraint(equalToConstant: 48)
         ])
 
         containerStackView.setup(axis: .vertical, spacing: 16)
@@ -120,6 +133,8 @@ private extension ExperienceIntroView {
         containerStackView.addArrangedSubview(labelsStackView)
         containerStackView.setCustomSpacing(32, after: labelsStackView)
         containerStackView.addArrangedSubview(actionButton)
+        containerStackView.setCustomSpacing(16, after: actionButton)
+        containerStackView.addArrangedSubview(showInLinkedinButton)
 
         imageStackView.setup(axis: .vertical, alignment: .center)
         imageStackView.addArrangedSubview(imageView)
@@ -141,6 +156,7 @@ private extension ExperienceIntroView {
             self?.imageView.transform = .identity
             self?.labelsStackView.transform = .identity
             self?.actionButton.transform = .identity
+            self?.showInLinkedinButton.transform = .identity
         }
     }
 }
