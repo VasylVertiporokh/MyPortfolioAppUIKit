@@ -15,7 +15,6 @@
 		1F982EDE2EC3777B00EB733A /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982EDD2EC3777B00EB733A /* UIStackView+Ext.swift */; };
 		1F982EE02EC3779000EB733A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982EDF2EC3779000EB733A /* UIView+Constraints.swift */; };
 		1F982EE22EC3789000EB733A /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982EE12EC3789000EB733A /* UICollectionView+Extension.swift */; };
-		1F982EE42EC378AC00EB733A /* UITableView+Extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982EE32EC378AC00EB733A /* UITableView+Extansion.swift */; };
 		1F982EE72EC378D300EB733A /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982EE62EC378D300EB733A /* NSObject+Extension.swift */; };
 		1F982EE92EC3793700EB733A /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982EE82EC3793700EB733A /* SectionModel.swift */; };
 		1F982EEC2EC3795900EB733A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F982EEB2EC3795900EB733A /* BaseView.swift */; };
@@ -125,7 +124,6 @@
 		1F982EDD2EC3777B00EB733A /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
 		1F982EDF2EC3779000EB733A /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		1F982EE12EC3789000EB733A /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		1F982EE32EC378AC00EB733A /* UITableView+Extansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extansion.swift"; sourceTree = "<group>"; };
 		1F982EE62EC378D300EB733A /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		1F982EE82EC3793700EB733A /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		1F982EEB2EC3795900EB733A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -300,7 +298,6 @@
 				1F982EDD2EC3777B00EB733A /* UIStackView+Ext.swift */,
 				1F982EDF2EC3779000EB733A /* UIView+Constraints.swift */,
 				1F982EE12EC3789000EB733A /* UICollectionView+Extension.swift */,
-				1F982EE32EC378AC00EB733A /* UITableView+Extansion.swift */,
 				1F98309C2EC4A87900EB733A /* UIView+Extension.swift */,
 				1F98313C2ECC9FB100EB733A /* NSLayoutConstraint+Extension.swift */,
 			);
@@ -954,7 +951,6 @@
 				1F982EEE2EC379A400EB733A /* BaseViewController.swift in Sources */,
 				1F982F372EC3913100EB733A /* MainTabBarCoordinator.swift in Sources */,
 				1F9830AA2EC4CD1300EB733A /* NetworkLogger.swift in Sources */,
-				1F982EE42EC378AC00EB733A /* UITableView+Extansion.swift in Sources */,
 				1F9830B42EC4CE0B00EB733A /* NetworkPlugin.swift in Sources */,
 				1F982EF02EC379E000EB733A /* BaseViewModel.swift in Sources */,
 				1F9830B92EC4CE5D00EB733A /* NetworkError.swift in Sources */,

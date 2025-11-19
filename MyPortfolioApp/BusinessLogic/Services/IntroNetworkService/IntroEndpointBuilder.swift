@@ -7,11 +7,15 @@
 
 import Foundation
 
+/// Defines all API endpoints related to the Intro feature.
 enum IntroEndpointBuilder {
+    /// Endpoint for fetching introduction/experience data.
     case getIntro
 }
 
 extension IntroEndpointBuilder: EndpointBuilderProtocol {
+
+    /// The URL path associated with each Intro endpoint.
     var path: String {
         switch self {
         case .getIntro:
@@ -19,13 +23,16 @@ extension IntroEndpointBuilder: EndpointBuilderProtocol {
         }
     }
 
+    /// The HTTP method used for the request.
     var method: HTTPMethod {
         switch self {
         case .getIntro:
-                .get
+            .get
         }
     }
 
+    /// The request body for the endpoint, if applicable.
+    /// Intro endpoints do not send a body.
     var body: RequestBody? {
         return nil
     }

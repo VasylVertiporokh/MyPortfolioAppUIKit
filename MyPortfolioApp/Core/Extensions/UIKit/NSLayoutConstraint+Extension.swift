@@ -8,6 +8,12 @@
 import UIKit
 
 extension NSLayoutConstraint {
+
+    /// Sets the priority of the constraint and returns the same instance,
+    /// allowing for convenient method chaining.
+    ///
+    /// - Parameter priority: The layout priority to apply.
+    /// - Returns: The updated constraint with the assigned priority.
     func withPriority(_ priority: UILayoutPriority) -> NSLayoutConstraint {
         self.priority = priority
         return self

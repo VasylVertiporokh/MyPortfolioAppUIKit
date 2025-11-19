@@ -7,13 +7,22 @@
 
 import Foundation
 
+/// Errors that may occur while building an HTTP request.
 enum RequestBuilderError: Error {
+
+    /// Indicates that the request body failed to encode (e.g., JSON encoding failed).
     case bodyEncodingError
+
+    /// Indicates that the constructed URL is invalid.
     case badURL
+
+    /// Indicates that URL components could not be properly assembled.
     case badURLComponents
 }
 
 extension RequestBuilderError: LocalizedError {
+
+    /// A human-readable description of the request-building error.
     var requestErrorDescription: String? {
         switch self {
         case .bodyEncodingError:

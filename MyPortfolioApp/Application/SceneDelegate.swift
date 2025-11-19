@@ -10,62 +10,78 @@ import Combine
 import Lightbox
 import Kingfisher
 
+/// The scene delegate responsible for managing the app's lifecycle within a specific UIWindowScene.
+/// Initializes the main window, dependency container, and root coordinator.
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    /// The main window associated with this scene.
     var window: UIWindow?
+
+    /// Stores Combine subscriptions for lifecycle-bound tasks.
     var cancellables = Set<AnyCancellable>()
 
+    /// The main application coordinator responsible for handling navigation flows.
     var appCoordinator: AppCoordinator!
+
+    /// The dependency container used throughout the app.
     var appContainer: AppContainer!
+
+    /// The root navigation controller passed to the app coordinator.
     let navigationController: UINavigationController = UINavigationController()
 
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    /// Called when the scene is first created.
+    /// Sets up the window, initializes app dependencies, configures `Lightbox`,
+    /// and starts the main coordinator.
+    func scene(
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions
+    ) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+
         self.window = UIWindow(windowScene: windowScene)
         self.appContainer = AppContainerImpl()
+
         self.appCoordinator = AppCoordinator(
             window: window!,
             container: appContainer,
             navigationController: navigationController
         )
+
         self.configureLightbox()
         self.appCoordinator?.start()
     }
 
-    func sceneDidDisconnect(_ scene: UIScene) {
-        // Called as the scene is being released by the system.
-        // This occurs shortly after the scene enters the background, or when its session is discarded.
-        // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
-    }
+    /// Called when the scene is being released by the system.
+    /// Occurs when the scene enters the background or its session is discarded.
+    func sceneDidDisconnect(_ scene: UIScene) { }
 
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
-    }
+    /// Called when the scene transitions from inactive to active state.
+    /// Use this to restart paused tasks.
+    func sceneDidBecomeActive(_ scene: UIScene) { }
 
-    func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
-    }
+    /// Called when the scene transitions from active to inactive state.
+    /// May happen due to temporary interruptions (e.g., incoming phone call).
+    func sceneWillResignActive(_ scene: UIScene) { }
 
-    func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
-    }
+    /// Called when the scene moves from background to foreground.
+    /// Restore UI changes made when entering the background.
+    func sceneWillEnterForeground(_ scene: UIScene) { }
 
-    func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
-    }
+    /// Called when the scene transitions from foreground to background.
+    /// Save data, release shared resources, and store state for restoration.
+    func sceneDidEnterBackground(_ scene: UIScene) { }
 }
 
-// MARK: - Private extenison
+// MARK: - Private extension
+
 private extension SceneDelegate {
+
+    /// Configures global Lightbox settings used for displaying image galleries.
+    /// Sets preload behavior and Kingfisher-based asynchronous image loading.
     func configureLightbox() {
         LightboxConfig.preload = 2
+
         LightboxConfig.loadImage = { imageView, url, completion in
             DispatchQueue.main.async {
                 imageView.kf.setImage(with: url) { result in

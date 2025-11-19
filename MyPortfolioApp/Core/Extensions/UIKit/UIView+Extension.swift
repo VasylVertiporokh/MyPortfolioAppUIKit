@@ -8,12 +8,8 @@
 import UIKit
 
 extension UIView {
-    var screenWidth: CGFloat {
-        UIScreen.main.bounds.width
-    }
-
-    func rounded() {
-        clipsToBounds = true
-        layer.cornerRadius = min(bounds.width, bounds.height) / 2
-    }
+    /// Returns the width of the device screen.
+     var screenWidth: CGFloat {
+         UIScreen.main.bounds.width
+     }
 }
