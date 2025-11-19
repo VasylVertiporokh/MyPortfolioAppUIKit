@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  MyPortfolioApp
+
+  Created by Vasia Vertiporoh on 11/11/2025.
+  
+*/
+
+"genaral.error" = "Error";
+"genaral.ok" = "OK";
+"genaral.done" = "Done";
+"genaral.cancel" = "Cancel";
+
+"tabBar.item.projects" = "Projects";
+"tabBar.item.stack" = "My stack";
+"projects.projectsList.navigationTitle" = "Projects";
+"myStack.navigationTitle" = "About me";
