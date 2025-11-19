@@ -30,6 +30,8 @@ private extension ExperienceIntroViewController {
                 switch action {
                 case .actionButtonDidTap:
                     viewModel.showExperienceList()
+                case .linkedinButtonDidTap:
+                    viewModel.openLinkedInProfile()
                 }
             }
             .store(in: &cancellables)

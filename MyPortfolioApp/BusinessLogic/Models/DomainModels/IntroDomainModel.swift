@@ -23,6 +23,12 @@ struct IntroDomainModel {
     /// The title displayed on the action button.
     let actionButtonTitle: String
 
+    /// The title for the LinkedIn button displayed in the interface.
+    let linkedinButtonTitle: String
+
+    /// The URL to the LinkedIn profile.
+    let linkedinUrl: URL
+
     // MARK: - Init from response model
 
     /// Initializes a domain model using a response model received from the backend.
@@ -32,5 +38,7 @@ struct IntroDomainModel {
         self.shortInfo = response.shortInfo
         self.myName = response.myName
         self.actionButtonTitle = response.actionButtonTitle
+        self.linkedinButtonTitle = response.linkedinButtonTitle
+        self.linkedinUrl = response.linkedInURL
     }
 }

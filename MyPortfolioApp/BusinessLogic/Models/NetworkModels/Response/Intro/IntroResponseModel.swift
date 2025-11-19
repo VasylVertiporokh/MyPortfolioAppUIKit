@@ -22,4 +22,10 @@ struct IntroResponseModel: Decodable {
 
     /// The title for the action button displayed on the intro screen.
     let actionButtonTitle: String
+
+    /// The title for the inkedin button displayed on the intro screen.
+    let linkedinButtonTitle: String
+
+    /// The URL to the linkedin profile.
+    let linkedInURL: URL
 }

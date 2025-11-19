@@ -15,6 +15,7 @@ enum ExperienceIntroViewModelEvent {
 final class ExperienceIntroViewModel: BaseViewModel {
     // MARK: - Private properties
     private let introNetworkingService: IntroNetworkService
+    private var linkedinURL: URL?
 
     // MARK: - Transition publisher
     private(set) lazy var transitionPublisher = transitionSubject.eraseToAnyPublisher()
@@ -42,6 +43,10 @@ extension ExperienceIntroViewModel {
     func showExperienceList() {
         transitionSubject.send(.showPortfolioProjects)
     }
+
+    func openLinkedInProfile() {
+        transitionSubject.send(.showLinkedInProfile(linkedinURL))
+    }
 }
 
 // MARK: - Private extenison
@@ -64,6 +69,7 @@ private extension ExperienceIntroViewModel {
     }
 
     func dataDidFetch(_ response: IntroResponseModel) {
+        linkedinURL = response.linkedInURL
         eventSubject.send(.introDidFetch(.init(from: response)))
     }
 }
