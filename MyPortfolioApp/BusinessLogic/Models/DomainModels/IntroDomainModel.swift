@@ -7,13 +7,26 @@
 
 import Foundation
 
+/// A domain model representing introduction/experience information
+/// used within the app's presentation layer.
 struct IntroDomainModel {
+
+    /// The URL to the user's photo.
     let myPhotoUrl: URL
+
+    /// A short description or introduction text.
     let shortInfo: String
+
+    /// The user's full name.
     let myName: String
+
+    /// The title displayed on the action button.
     let actionButtonTitle: String
 
     // MARK: - Init from response model
+
+    /// Initializes a domain model using a response model received from the backend.
+    /// - Parameter response: The decoded `IntroResponseModel` returned by the API.
     init(from response: IntroResponseModel) {
         self.myPhotoUrl = response.myPhotoUrl
         self.shortInfo = response.shortInfo
