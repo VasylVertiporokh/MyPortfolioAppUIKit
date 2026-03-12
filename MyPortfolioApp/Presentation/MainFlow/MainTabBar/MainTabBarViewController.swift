@@ -44,14 +44,18 @@ final class MainTabBarViewController: UITabBarController {
 // MARK: - Setup MainTabBarViewController
 private extension MainTabBarViewController {
     func setupUI() {
-        tabBar.isTranslucent = true
         tabBar.tintColor = Colors.primaryBlueDark.color
-        tabBar.backgroundColor = Colors.tabBarBackground.color
         tabBar.shadowImage = UIImage()
         tabBar.backgroundImage = UIImage()
+
+        if #available(iOS 26, *) {
+            return
+        }
+
+        tabBar.isTranslucent = true
+        tabBar.backgroundColor = Colors.tabBarBackground.color
         addShape()
     }
-
     func setupBindings() { }
 
     func addShape() {
